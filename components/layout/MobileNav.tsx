@@ -25,16 +25,18 @@ export const MobileNav: React.FC = () => {
     };
 
     if (isOpen) {
+      const previousOverflow = document.body.style.overflow;
       document.body.style.overflow = "hidden";
       window.addEventListener("keydown", handleKeyDown);
-    } else {
-      document.body.style.overflow = "";
+
+      return () => {
+        document.body.style.overflow = previousOverflow;
+        window.removeEventListener("keydown", handleKeyDown);
+      };
     }
 
-    return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", handleKeyDown);
-    };
+    document.body.style.overflow = "";
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen]);
 
   const toggleMenu = (e: React.MouseEvent) => {
@@ -52,6 +54,7 @@ export const MobileNav: React.FC = () => {
         className="p-2.5 text-on-surface hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-lg bg-surface-container border border-outline-variant/40 transition-colors relative z-[60] shrink-0 cursor-pointer"
         aria-label={isOpen ? "Close Navigation Menu" : "Open Navigation Menu"}
         aria-expanded={isOpen}
+        aria-controls="mobile-navigation"
       >
         {isOpen ? (
           <X className="w-6 h-6 text-secondary" />
@@ -60,28 +63,34 @@ export const MobileNav: React.FC = () => {
         )}
       </button>
 
-      {/* Solid Full-Width Mobile Dropdown Overlay Directly Below Header */}
+      {/* Mobile navigation backdrop and panel below the header */}
       {isOpen && (
         <div
-          className="fixed inset-x-0 top-[80px] bottom-0 z-[50] bg-[#0a0e13] text-on-surface overflow-y-auto border-t border-outline-variant/30 flex flex-col justify-between p-4 sm:p-6 shadow-2xl"
-          role="dialog"
-          aria-modal="true"
-          style={{ backgroundColor: "#0a0e13", opacity: 1 }}
+          className="fixed inset-x-0 top-20 bottom-0 z-[50] bg-black/60"
+          onClick={() => setIsOpen(false)}
         >
-          <div className="max-w-xl mx-auto w-full flex flex-col justify-between min-h-full py-2">
-            <div>
-              {/* Menu Section Header */}
-              <div className="flex items-center justify-between border-b border-outline-variant/30 pb-3 mb-4">
-                <span className="font-label text-xs uppercase tracking-widest text-primary font-bold">
-                  Navigation Menu
-                </span>
-                <span className="font-label text-[11px] text-on-surface-variant uppercase">
-                  Campbellfield Workshop
-                </span>
-              </div>
+          <div
+            id="mobile-navigation"
+            className="h-full w-[calc(100%-1rem)] max-w-xl ml-auto overflow-y-auto border-t border-outline-variant/30 bg-[#0a0e13] text-on-surface p-4 shadow-2xl sm:p-6"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile navigation"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="max-w-xl mx-auto w-full flex flex-col justify-between min-h-full py-2">
+              <div>
+                {/* Menu Section Header */}
+                <div className="flex items-center justify-between border-b border-outline-variant/30 pb-3 mb-4">
+                  <span className="font-label text-xs uppercase tracking-widest text-primary font-bold">
+                    Navigation Menu
+                  </span>
+                  <span className="font-label text-[11px] text-on-surface-variant uppercase">
+                    Campbellfield Workshop
+                  </span>
+                </div>
 
-              {/* Main Vertically Stacked Navigation Links */}
-              <nav className="flex flex-col space-y-1.5">
+                {/* Main Vertically Stacked Navigation Links */}
+                <nav className="flex flex-col space-y-1.5">
                 {NAV_ITEMS.map((item) => {
                   const isActive =
                     pathname === item.href ||
@@ -102,10 +111,10 @@ export const MobileNav: React.FC = () => {
                     </Link>
                   );
                 })}
-              </nav>
+                </nav>
 
-              {/* Service Quick Links Section */}
-              <div className="mt-6 pt-4 border-t border-outline-variant/30">
+                {/* Service Quick Links Section */}
+                <div className="mt-6 pt-4 border-t border-outline-variant/30">
                 <span className="font-label text-xs uppercase tracking-widest text-secondary font-bold block mb-2.5">
                   Specialized Coating Services
                 </span>
@@ -122,8 +131,8 @@ export const MobileNav: React.FC = () => {
                     </Link>
                   ))}
                 </div>
+                </div>
               </div>
-            </div>
 
             {/* Bottom Actions & Contact Info */}
             <div className="mt-8 pt-5 border-t border-outline-variant/40 space-y-4">
@@ -171,6 +180,7 @@ export const MobileNav: React.FC = () => {
                 {SITE_CONFIG.address.full}
               </div>
             </div>
+          </div>
           </div>
         </div>
       )}
