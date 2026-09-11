@@ -2,21 +2,23 @@ import React from "react";
 import { constructMetadata } from "@/lib/config/seo";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SERVICES_DATA } from "@/lib/data/services";
+import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
+import { FinishesSwatches } from "@/components/sections/FinishesSwatches";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { RfqQuoteForm } from "@/components/forms/RfqQuoteForm";
-import { Check, ShieldCheck, Layers, Sparkles } from "lucide-react";
+import { Check, ShieldCheck, Sparkles, Layers } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export const metadata = constructMetadata({
-  title: "Industrial Metal Finishing Melbourne | G & S Engineering",
+  title: "Sandblasting & Surface Preparation Melbourne | G & S Engineering",
   description:
-    "Surface preparation, abrasive grit blasting, degreasing, zinc shield primers, and industrial topcoats in Campbellfield, VIC.",
-  path: "/services/industrial-finishing",
+    "Integrated abrasive sandblasting and chemical pretreatment in Campbellfield, Victoria. Crucial pre-coating surface profiling, mill-scale removal, degreasing, and phosphate wash line.",
+  path: "/services/sandblasting-pretreatment",
 });
 
-export default function IndustrialFinishingPage() {
-  const service = SERVICES_DATA.find((s) => s.slug === "industrial-finishing");
+export default function SandblastingPretreatmentPage() {
+  const service = SERVICES_DATA.find((s) => s.slug === "sandblasting-pretreatment");
   if (!service) notFound();
 
   return (
@@ -24,18 +26,18 @@ export default function IndustrialFinishingPage() {
       <Breadcrumbs
         items={[
           { name: "Services", href: "/services" },
-          { name: "Industrial Finishing", href: "/services/industrial-finishing" },
+          { name: "Sandblasting & Surface Prep", href: "/services/sandblasting-pretreatment" },
         ]}
       />
 
       {/* Header */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center py-space-lg mb-space-xl border-b border-outline-variant/30">
         <div className="lg:col-span-7">
-          <span className="font-label text-label-sm uppercase tracking-widest text-secondary font-bold block mb-space-xs">
-            04 // Surface Pretreatment & Barrier Systems
+          <span className="font-label text-label-sm uppercase tracking-widest text-primary font-bold block mb-space-xs">
+            04 // Sandblasting & Pretreatment (Powder Coating Prep)
           </span>
           <h1 className="font-headline text-headline-hero text-headline-hero-mobile sm:text-headline-hero text-on-surface uppercase tracking-tight mb-space-md">
-            Industrial Metal Finishing Melbourne
+            Sandblasting & Surface Preparation
           </h1>
           <p className="font-body text-body-lg text-on-surface-variant max-w-2xl mb-space-lg leading-relaxed">
             {service.fullDescription}
@@ -58,7 +60,7 @@ export default function IndustrialFinishingPage() {
         <div className="lg:col-span-5 relative h-[420px] rounded-xl overflow-hidden shadow-2xl border border-outline-variant/40">
           <Image
             src={service.image}
-            alt="Dual Booth Industrial Metal Finishing Line"
+            alt="Sandblasting and Surface Prep Facility Campbellfield"
             fill
             sizes="(max-width: 1024px) 100vw, 500px"
             className="object-cover"
@@ -72,7 +74,7 @@ export default function IndustrialFinishingPage() {
         <div className="p-space-lg rounded-xl bg-surface-container border border-outline-variant/30">
           <h3 className="font-headline text-headline-sm text-on-surface font-bold uppercase mb-space-md flex items-center gap-2">
             <Layers className="w-5 h-5 text-secondary" />
-            Finishing Capabilities
+            Key Technical Features
           </h3>
           <ul className="space-y-space-xs font-body text-body-md text-on-surface-variant">
             {service.features.map((feat, idx) => (
@@ -87,7 +89,7 @@ export default function IndustrialFinishingPage() {
         <div className="p-space-lg rounded-xl bg-surface-container border border-outline-variant/30">
           <h3 className="font-headline text-headline-sm text-on-surface font-bold uppercase mb-space-md flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-primary" />
-            Corrosive Protection Applications
+            Essential Prep Applications
           </h3>
           <ul className="space-y-space-xs font-body text-body-md text-on-surface-variant">
             {service.applications.map((app, idx) => (
@@ -99,6 +101,9 @@ export default function IndustrialFinishingPage() {
           </ul>
         </div>
       </div>
+
+      <ProcessTimeline />
+      <FinishesSwatches />
 
       <div className="my-margin" id="quote">
         <RfqQuoteForm />

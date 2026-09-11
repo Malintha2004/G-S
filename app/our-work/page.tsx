@@ -7,9 +7,9 @@ import { CtaBanner } from "@/components/sections/CtaBanner";
 import { Image as ImageIcon } from "lucide-react";
 
 export const metadata = constructMetadata({
-  title: "Our Work & Portfolio | G & S Engineering Campbellfield",
+  title: "Our Work & Portfolio | G & S Engineering Powder Coating Campbellfield",
   description:
-    "Explore our commercial powder coating and metal fabrication project portfolio. Real shop-floor photos from 179 Barry Road, Campbellfield.",
+    "Explore our commercial powder coating project portfolio. Real shop-floor photos from 179 Barry Road, Campbellfield.",
   path: "/our-work",
 });
 
@@ -24,10 +24,10 @@ export default function OurWorkPage() {
           Campbellfield Workshop Portfolio
         </div>
         <h1 className="font-headline text-headline-hero text-headline-hero-mobile sm:text-headline-hero text-on-surface uppercase tracking-tight mb-space-md">
-          Our Fabrication & Coating Work
+          Our Powder Coating & Surface Prep Work
         </h1>
         <p className="font-body text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
-          Real factory photos showcasing structural beam lines, electrostatic security gates, cantilever RHS frames, perforated facade panels, and heavy commercial assemblies.
+          Real factory photos showcasing structural coating runs, electrostatic security gates, architectural slats, perforated facade panels, and heavy commercial batch projects.
         </p>
       </div>
 

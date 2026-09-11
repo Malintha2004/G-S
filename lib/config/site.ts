@@ -1,9 +1,9 @@
 export const SITE_CONFIG = {
   name: "G & S Engineering",
   legalName: "Prime Age Industries Pty Ltd",
-  brandName: "G&S Fabrication | Powder Coating",
+  brandName: "G&S Powder Coating | G & S Engineering",
   description:
-    "Professional commercial powder coating & structural metal fabrication facility in Campbellfield, Victoria. 8.0m batch oven bay, MIG/TIG welding, CNC sheet metal fabrication, and industrial finishing.",
+    "Professional commercial powder coating & powder painting facility in Campbellfield, Victoria. 8.0m batch oven bay, abrasive sandblasting surface prep, chemical pretreatment, and durable industrial finishes.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.gsengineering.com.au",
   address: {
     street: "179 Barry Road",
@@ -28,14 +28,14 @@ export const SITE_CONFIG = {
   keywords: [
     "powder coating Campbellfield",
     "powder coating Melbourne",
-    "powder coating Victoria",
-    "metal fabrication Campbellfield",
-    "powder coating services Melbourne",
     "industrial powder coating Melbourne",
-    "commercial powder coating VIC",
-    "custom metal fabrication Campbellfield",
-    "steel fabrication Melbourne",
+    "commercial powder coating",
+    "architectural powder coating",
+    "powder painting Melbourne",
+    "powder coating services",
+    "sandblasting surface preparation Melbourne",
     "batch oven powder coating",
+    "protective coating Campbellfield",
   ],
   logos: {
     main: "/images/logo.jpg",

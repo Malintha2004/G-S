@@ -8,14 +8,14 @@ export const ProcessTimeline: React.FC = () => {
       num: 1,
       stage: "Stage 01",
       title: "Inspection & Assessment",
-      desc: "Every piece is reviewed for substrate integrity, laser scale, sharp corners, weld spatter, and oil contamination prior to chemical immersion.",
+      desc: "Every piece is reviewed for substrate integrity, laser scale, sharp edges, surface oil, and contamination prior to chemical immersion.",
       highlight: false,
     },
     {
       num: 2,
       stage: "Stage 02",
       title: "Surface Preparation",
-      desc: "Alkaline degreasing, rinse baths, mechanical abrasive profiling (sand/grit blast), and application of zinc-phosphate or chromate-free conversion coats.",
+      desc: "Alkaline degreasing, rinse baths, mechanical abrasive sandblasting, and application of zinc-phosphate or chromate-free conversion coats.",
       highlight: false,
     },
     {
@@ -106,10 +106,10 @@ export const ProcessTimeline: React.FC = () => {
             </div>
             <div>
               <h4 className="font-headline text-headline-sm text-on-surface uppercase font-bold">
-                Have Long Lengths or Oversized Steelwork?
+                Have Long Lengths or Oversized Metalwork?
               </h4>
               <p className="font-body text-body-sm text-on-surface-variant">
-                Our batch curing oven accommodates structural steel elements and gates up to 8.0m in length x 2.4m height.
+                Our batch curing oven accommodates commercial steel elements and gates up to 8.0m in length x 2.4m height.
               </p>
             </div>
           </div>

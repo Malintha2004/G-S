@@ -7,14 +7,14 @@ describe("Quote Form Validation", () => {
   it("should validate correct form input", () => {
     const validInput = {
       fullName: "John Smith",
-      companyName: "Apex Steel",
+      companyName: "Apex Metals",
       phone: "0415668527",
-      email: "john@apexsteel.com.au",
-      serviceRequired: "both",
+      email: "john@apexmetals.com.au",
+      serviceRequired: "powder-coating",
       preferredColor: "Satin Black",
       estimatedQuantity: "50 frames",
       requiredDate: "2026-10-01",
-      projectScope: "RHS frame fabrication and satin powder coating.",
+      projectScope: "Batch aluminum louvres satin black powder coating.",
     };
 
     const result = quoteFormSchema.safeParse(validInput);

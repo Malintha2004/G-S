@@ -2,7 +2,7 @@
 
 ## Target Search Terms
 - Primary Target: "powder coating Campbellfield"
-- Secondary Targets: "powder coating Melbourne", "powder coating Victoria", "industrial powder coating Melbourne", "metal fabrication Campbellfield", "custom metal fabrication Melbourne".
+- Secondary Targets: "powder coating Melbourne", "commercial powder coating", "industrial powder coating Melbourne", "powder painting Melbourne", "architectural powder coating".
 
 ## Key SEO Elements
 1. **Metadata**: Built using Next.js Metadata API with unique titles, descriptions, canonical URLs, and OpenGraph tags per route.
@@ -11,9 +11,9 @@
    - `BreadcrumbList` schema on inner routes.
 3. **Descriptive URLs**:
    - `/services/powder-coating`
-   - `/services/metal-fabrication`
-   - `/services/custom-fabrication`
-   - `/services/industrial-finishing`
+   - `/services/industrial-powder-coating`
+   - `/services/architectural-coating`
+   - `/services/sandblasting-pretreatment`
 4. **Sitemap & Robots**:
    - Dynamic `sitemap.ts` listing indexable routes.
    - `robots.ts` configured for search crawlers.

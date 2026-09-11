@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { SITE_CONFIG } from "@/lib/config/site";
-import { ShieldCheck, Layers, Shield, Wrench, Sparkles } from "lucide-react";
+import { ShieldCheck, Layers, Shield, Sparkles, Sliders } from "lucide-react";
 
 export const TrustSection: React.FC = () => {
   return (
@@ -31,7 +31,7 @@ export const TrustSection: React.FC = () => {
                     </span>
                   </div>
                   <p className="font-body text-body-sm text-on-surface">
-                    Every slat, rebate, and recessed weld seam receives targeted electrostatic charge for zero shadow spots and balanced mil thickness.
+                    Every slat, rebate, and corner seam receives targeted electrostatic charge for zero shadow spots and balanced mil thickness.
                   </p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ export const TrustSection: React.FC = () => {
             <div className="flex items-center gap-space-xs text-secondary mb-space-xs">
               <ShieldCheck className="w-5 h-5 text-secondary" />
               <span className="font-label text-label-sm uppercase tracking-widest font-bold">
-                Under One Factory Roof
+                Under One Workshop Roof
               </span>
             </div>
             <h2 className="font-headline text-headline-lg text-on-surface uppercase tracking-tight mb-space-md">
@@ -51,10 +51,10 @@ export const TrustSection: React.FC = () => {
             </h2>
             <p className="font-body text-body-lg text-on-surface-variant mb-space-md leading-relaxed">
               Eliminate double handling, freight delays, and contractor finger-pointing. At{" "}
-              <strong className="text-on-surface">{SITE_CONFIG.name}</strong>, our Campbellfield workshop pairs comprehensive structural metal fabrication with commercial-grade powder coating facilities under a single chain of custody.
+              <strong className="text-on-surface">{SITE_CONFIG.name}</strong>, our Campbellfield workshop pairs abrasive sandblasting surface prep with commercial-grade powder coating facilities under a single chain of custody.
             </p>
             <p className="font-body text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
-              Whether you require heavy structural lintels, architectural screens, custom utility ute trays, or bulk production runs of brackets, our certified technicians execute precise chemical pretreatment, automated baking, and strict micron verification.
+              Whether you require architectural screens, commercial fencing, equipment enclosures, automotive components, or bulk production runs of posts and brackets, our technicians execute precise chemical pretreatment, automated baking, and strict micron verification.
             </p>
 
             {/* 3 Highlight Cards */}
@@ -85,13 +85,13 @@ export const TrustSection: React.FC = () => {
 
               <div className="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
                 <div className="w-10 h-10 rounded-lg bg-surface-container-high text-tertiary flex items-center justify-center mb-space-sm">
-                  <Wrench className="w-5 h-5 text-tertiary" />
+                  <Sliders className="w-5 h-5 text-tertiary" />
                 </div>
                 <h3 className="font-headline text-headline-sm text-on-surface mb-1 font-bold">
-                  Precision Fabrication
+                  Surface Integrity
                 </h3>
                 <p className="font-body text-body-sm text-on-surface-variant">
-                  Full-service MIG/TIG welding, plate bending, punching, and assembly to CAD drawings.
+                  Integrated abrasive sandblasting, chemical etching wash, and multi-stage pretreatment.
                 </p>
               </div>
             </div>

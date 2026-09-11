@@ -2,21 +2,23 @@ import React from "react";
 import { constructMetadata } from "@/lib/config/seo";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SERVICES_DATA } from "@/lib/data/services";
+import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
+import { FinishesSwatches } from "@/components/sections/FinishesSwatches";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { RfqQuoteForm } from "@/components/forms/RfqQuoteForm";
-import { Check, ShieldCheck, Sparkles, Sliders } from "lucide-react";
+import { Check, ShieldCheck, Sparkles, Layers } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export const metadata = constructMetadata({
-  title: "Custom Metal Fabrication Melbourne | G & S Engineering",
+  title: "Industrial Powder Coating Melbourne | G & S Engineering",
   description:
-    "Bespoke architectural screens, laser-cut louvres, prototype metalwork, 4x4 trays, and custom engineering from DXF CAD drawings at 179 Barry Road, Campbellfield.",
-  path: "/services/custom-fabrication",
+    "Heavy duty industrial powder coating systems in Campbellfield, Victoria. Zinc shield anti-corrosion barrier primers, AS 4506 compliance, and extreme durability for commercial machinery and infrastructure.",
+  path: "/services/industrial-powder-coating",
 });
 
-export default function CustomFabricationPage() {
-  const service = SERVICES_DATA.find((s) => s.slug === "custom-fabrication");
+export default function IndustrialPowderCoatingPage() {
+  const service = SERVICES_DATA.find((s) => s.slug === "industrial-powder-coating");
   if (!service) notFound();
 
   return (
@@ -24,7 +26,7 @@ export default function CustomFabricationPage() {
       <Breadcrumbs
         items={[
           { name: "Services", href: "/services" },
-          { name: "Custom Fabrication", href: "/services/custom-fabrication" },
+          { name: "Industrial Powder Coating", href: "/services/industrial-powder-coating" },
         ]}
       />
 
@@ -32,10 +34,10 @@ export default function CustomFabricationPage() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center py-space-lg mb-space-xl border-b border-outline-variant/30">
         <div className="lg:col-span-7">
           <span className="font-label text-label-sm uppercase tracking-widest text-primary font-bold block mb-space-xs">
-            03 // Bespoke Metalwork & Prototypes
+            02 // Industrial Heavy Duty Powder Coating
           </span>
           <h1 className="font-headline text-headline-hero text-headline-hero-mobile sm:text-headline-hero text-on-surface uppercase tracking-tight mb-space-md">
-            Custom Metal Fabrication Melbourne
+            Industrial Powder Coating Melbourne
           </h1>
           <p className="font-body text-body-lg text-on-surface-variant max-w-2xl mb-space-lg leading-relaxed">
             {service.fullDescription}
@@ -58,7 +60,7 @@ export default function CustomFabricationPage() {
         <div className="lg:col-span-5 relative h-[420px] rounded-xl overflow-hidden shadow-2xl border border-outline-variant/40">
           <Image
             src={service.image}
-            alt="Perforated Architectural Facade Custom Fabrication"
+            alt="Industrial Powder Coating Melbourne Facility"
             fill
             sizes="(max-width: 1024px) 100vw, 500px"
             className="object-cover"
@@ -71,8 +73,8 @@ export default function CustomFabricationPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter-lg mb-margin">
         <div className="p-space-lg rounded-xl bg-surface-container border border-outline-variant/30">
           <h3 className="font-headline text-headline-sm text-on-surface font-bold uppercase mb-space-md flex items-center gap-2">
-            <Sliders className="w-5 h-5 text-secondary" />
-            Custom Engineering Capabilities
+            <Layers className="w-5 h-5 text-secondary" />
+            Key Technical Features
           </h3>
           <ul className="space-y-space-xs font-body text-body-md text-on-surface-variant">
             {service.features.map((feat, idx) => (
@@ -87,7 +89,7 @@ export default function CustomFabricationPage() {
         <div className="p-space-lg rounded-xl bg-surface-container border border-outline-variant/30">
           <h3 className="font-headline text-headline-sm text-on-surface font-bold uppercase mb-space-md flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-primary" />
-            Specialized Projects
+            Common Industrial Applications
           </h3>
           <ul className="space-y-space-xs font-body text-body-md text-on-surface-variant">
             {service.applications.map((app, idx) => (
@@ -99,6 +101,9 @@ export default function CustomFabricationPage() {
           </ul>
         </div>
       </div>
+
+      <ProcessTimeline />
+      <FinishesSwatches />
 
       <div className="my-margin" id="quote">
         <RfqQuoteForm />

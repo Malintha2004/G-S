@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { SITE_CONFIG } from "./site";
 
 export function constructMetadata({
-  title = `${SITE_CONFIG.name} | Powder Coating & Metal Fabrication Campbellfield`,
+  title = `${SITE_CONFIG.name} | Commercial Powder Coating Campbellfield Melbourne`,
   description = SITE_CONFIG.description,
   path = "",
   image = SITE_CONFIG.logos.main,

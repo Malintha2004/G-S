@@ -6,9 +6,9 @@ import { CtaBanner } from "@/components/sections/CtaBanner";
 import { HelpCircle } from "lucide-react";
 
 export const metadata = constructMetadata({
-  title: "Powder Coating & Fabrication FAQ | G & S Engineering",
+  title: "Powder Coating FAQ | G & S Engineering",
   description:
-    "Get answers to common industrial powder coating and metal fabrication questions: oven capacities, substrates, turnaround times, and Colorbond matching.",
+    "Get answers to common industrial powder coating questions: oven capacities, sandblasting prep, substrates, turnaround times, and Colorbond matching.",
   path: "/faq",
 });
 
@@ -26,7 +26,7 @@ export default function FaqPage() {
           Frequently Asked Questions
         </h1>
         <p className="font-body text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
-          Detailed technical answers regarding our Campbellfield plant capabilities, oven sizing limits, substrate pretreatments, and turnaround options.
+          Detailed technical answers regarding our Campbellfield plant capabilities, oven sizing limits, substrate pretreatments, sandblasting, and turnaround options.
         </p>
       </div>
 

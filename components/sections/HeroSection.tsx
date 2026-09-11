@@ -28,7 +28,7 @@ export const HeroSection: React.FC = () => {
             {SITE_CONFIG.address.full}
           </span>
           <span className="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-tertiary font-label text-label-md tracking-wider uppercase">
-            Commercial Fabrication & Industrial Powder Coating
+            Commercial Powder Coating & Surface Preparation
           </span>
         </div>
 
@@ -38,17 +38,17 @@ export const HeroSection: React.FC = () => {
           <div className="lg:col-span-7 flex flex-col">
             <div className="inline-flex items-center gap-space-xs font-label text-label-sm text-secondary tracking-widest uppercase mb-space-xs font-bold">
               <Factory className="w-4 h-4 text-secondary" />
-              Heavy-Duty Industrial Production
+              Professional Powder Coating Specialists
             </div>
             <h1 className="font-headline text-headline-hero text-headline-hero-mobile sm:text-headline-hero text-on-surface tracking-tight uppercase leading-[1.08] mb-space-md">
               Professional{" "}
               <span className="text-primary underline decoration-secondary-container decoration-4 underline-offset-8">
                 Powder Coating
               </span>{" "}
-              & Metal Fabrication
+              & Surface Finishing
             </h1>
             <p className="font-body text-body-lg text-on-surface-variant max-w-2xl mb-space-lg leading-relaxed">
-              Durable finishes. Precision fabrication. Direct workshop quality. Servicing Melbourne’s northern commercial corridor with integrated structural welding, CNC sheet-metal work, and oven curing bays up to 8 metres.
+              Durable finishes. Vibrant colour options. Precision surface preparation. Servicing Melbourne’s northern industrial corridor with high-voltage electrostatic application, abrasive sandblasting, chemical pretreatment, and batch oven curing up to 8 metres.
             </p>
 
             {/* Primary CTAs */}
@@ -58,7 +58,7 @@ export const HeroSection: React.FC = () => {
                 className="inline-flex items-center justify-center px-space-lg py-space-md bg-secondary-container text-on-secondary-container font-label text-label-lg font-bold uppercase tracking-wider rounded-lg shadow-lg hover:bg-secondary-bright transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
                 <FileText className="w-5 h-5 mr-space-xs" />
-                Get A Direct Factory Quote
+                Get A Direct Workshop Quote
               </Link>
               <Link
                 href="/our-work"
@@ -80,11 +80,11 @@ export const HeroSection: React.FC = () => {
             <div className="pt-space-md border-t border-outline-variant/30 grid grid-cols-2 sm:grid-cols-4 gap-space-sm text-left">
               <div className="flex flex-col">
                 <span className="font-headline text-headline-sm font-bold text-on-surface">20+</span>
-                <span className="font-label text-label-sm uppercase tracking-wider text-on-surface-variant">Years Tech Mastery</span>
+                <span className="font-label text-label-sm uppercase tracking-wider text-on-surface-variant">Years Coating Mastery</span>
               </div>
               <div className="flex flex-col">
                 <span className="font-headline text-headline-sm font-bold text-primary">8.0m</span>
-                <span className="font-label text-label-sm uppercase tracking-wider text-on-surface-variant">Oven Bay Length</span>
+                <span className="font-label text-label-sm uppercase tracking-wider text-on-surface-variant">Batch Oven Length</span>
               </div>
               <div className="flex flex-col">
                 <span className="font-headline text-headline-sm font-bold text-on-surface">100%</span>
@@ -114,7 +114,7 @@ export const HeroSection: React.FC = () => {
                 {/* Live Badge */}
                 <div className="absolute top-space-md left-space-md bg-surface-container-lowest/90 backdrop-blur-md px-space-md py-space-xs rounded-lg flex items-center gap-space-xs">
                   <CheckCircle2 className="w-4 h-4 text-primary" />
-                  <span className="font-label text-label-sm uppercase tracking-widest text-on-surface font-bold">Live Workshop Run</span>
+                  <span className="font-label text-label-sm uppercase tracking-widest text-on-surface font-bold">Live Coating Run</span>
                 </div>
 
                 {/* Bottom Content Pill */}
@@ -124,10 +124,10 @@ export const HeroSection: React.FC = () => {
                       G&S Main Booth
                     </span>
                     <p className="font-headline text-headline-sm text-on-surface font-semibold">
-                      Dual Gantry Long-Bed Line
+                      Dual Gantry Long-Bed Coating Line
                     </p>
                     <p className="font-body text-body-sm text-on-surface-variant">
-                      Continuous automated ventilation & high-voltage grounding
+                      Continuous automated ventilation & electrostatic grounding
                     </p>
                   </div>
                   <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
@@ -142,7 +142,7 @@ export const HeroSection: React.FC = () => {
                   <div className="relative h-10 w-10 rounded-full overflow-hidden bg-white shrink-0 flex items-center justify-center p-0.5 border border-outline-variant">
                     <Image
                       src={SITE_CONFIG.logos.main}
-                      alt="G&S Fabrication Powder Coating Logo"
+                      alt="G&S Powder Coating Logo"
                       fill
                       sizes="40px"
                       className="object-cover"
@@ -153,7 +153,7 @@ export const HeroSection: React.FC = () => {
                       {SITE_CONFIG.legalName}
                     </span>
                     <span className="font-label text-label-sm text-tertiary">
-                      Campbellfield Fabrication Center
+                      Campbellfield Powder Coating Workshop
                     </span>
                   </div>
                 </div>

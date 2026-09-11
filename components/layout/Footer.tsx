@@ -24,14 +24,14 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-space-xs mb-space-xs">
               <Wrench className="w-5 h-5 text-secondary-container" />
               <span className="font-label text-label-sm uppercase tracking-widest text-secondary-container font-bold">
-                Direct Factory Quote
+                Direct Workshop Quote
               </span>
             </div>
             <h3 className="font-headline text-headline-sm font-bold text-on-surface">
-              Ready for Industrial Fabrication or Powder Coating?
+              Ready for Industrial Powder Coating & Surface Finishing?
             </h3>
             <p className="font-body text-body-sm text-on-surface-variant">
-              Commercial batches, architectural runs, and structural steel components delivered from Campbellfield.
+              Commercial batches, architectural runs, and custom colour coats delivered from Campbellfield.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-space-sm w-full lg:w-auto">
@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
               <div className="relative w-9 h-9 rounded-full overflow-hidden bg-white shrink-0 flex items-center justify-center p-0.5 border border-outline-variant">
                 <Image
                   src={SITE_CONFIG.logos.main}
-                  alt="G&S Fabrication Powder Coating Logo"
+                  alt="G&S Powder Coating Logo"
                   fill
                   sizes="36px"
                   className="object-cover"
@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="font-body text-body-sm text-on-surface-variant mb-space-md">
-              High-tolerance fabrication, structural welding, and commercial powder coating servicing Melbourne&apos;s northern industrial corridor.
+              Commercial powder coating, abrasive sandblasting, and protective surface finishing servicing Melbourne&apos;s northern industrial corridor.
             </p>
             <div className="flex flex-col gap-space-xs font-label text-label-sm text-on-surface-variant">
               <span className="flex items-center gap-space-xs">
@@ -157,7 +157,7 @@ export const Footer: React.FC = () => {
             </span>
             <div className="p-space-md bg-surface-container border border-outline-variant rounded-lg flex flex-col gap-space-xs mb-space-md">
               <span className="font-label text-label-sm uppercase tracking-wider text-on-surface-variant">
-                Fabrication Office
+                Powder Coating Bay
               </span>
               <a
                 href={`tel:${SITE_CONFIG.phones.primaryRaw}`}

@@ -4,19 +4,19 @@ import { Star } from "lucide-react";
 export const Testimonials: React.FC = () => {
   const reviews = [
     {
-      text: "G & S handled over 40 structural balustrade panels and security gates for our multi-residential site in Broadmeadows. Flawless satin black coat, zero defects on handover, and ready 2 days ahead of schedule.",
+      text: "G & S handled over 40 structural balustrade panels and security gates for our multi-residential site in Broadmeadows. Flawless satin black powder coat, zero defects on handover, and ready 2 days ahead of schedule.",
       name: "Marcus Vance",
       role: "Site Director, Northern Build Group",
     },
     {
-      text: "Having the welding and powder coating under the same roof on Barry Road is a game changer. No extra transport fees, no finger-pointing between suppliers. They just get it done right.",
+      text: "Having sandblasting, chemical wash pretreatment, and electrostatic powder coating under the same roof on Barry Road is a game changer. No extra transport fees, no finger-pointing between suppliers. They just get it done right.",
       name: "Damian Ross",
       role: "Operations Lead, Apex Logistics Transport",
     },
     {
-      text: "Brought them customized 4x4 canopy frames and perforated sheet dividers. The adhesion and finish quality are first-class. Highly recommend for custom fabrication in Melbourne.",
+      text: "Brought them custom architectural screens and 4x4 canopy frames for powder painting. The adhesion, Colorbond colour match, and satin finish quality are first-class. Highly recommend for commercial powder coating in Melbourne.",
       name: "Terry O’Connor",
-      role: "Custom Fabrication Client",
+      role: "Architectural Coating Client",
     },
   ];
 

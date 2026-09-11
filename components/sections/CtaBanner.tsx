@@ -20,10 +20,10 @@ export const CtaBanner: React.FC = () => {
               Direct Dispatch From Campbellfield
             </span>
             <h2 className="font-headline text-headline-lg text-on-surface uppercase tracking-tight mb-space-md">
-              Have A Project In Mind? Let’s Fabricate & Finish It.
+              Have A Project In Mind? Let’s Coat It Right.
             </h2>
             <p className="font-body text-body-lg text-on-surface-variant mb-space-xl">
-              Commercial batch runs, architectural metalwork, or heavy structural steel components. Speak directly with our workshop engineers today.
+              Commercial batch runs, architectural metalwork, or heavy structural steel components. Speak directly with our powder coating specialists today.
             </p>
             <div className="flex flex-wrap items-center gap-space-md">
               <Link
@@ -31,7 +31,7 @@ export const CtaBanner: React.FC = () => {
                 className="px-space-xl py-space-md bg-secondary-container text-on-secondary-container font-label text-label-lg font-bold uppercase tracking-wider rounded-lg hover:bg-secondary-bright transition-all shadow-lg inline-flex items-center gap-2"
               >
                 <FileText className="w-5 h-5" />
-                Request Factory Quote
+                Request Workshop Quote
               </Link>
               <a
                 href={`tel:${SITE_CONFIG.phones.primaryRaw}`}

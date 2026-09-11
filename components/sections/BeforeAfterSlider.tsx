@@ -37,10 +37,10 @@ export const BeforeAfterSlider: React.FC = () => {
             Substrate Transformation
           </span>
           <h2 className="font-headline text-headline-lg text-on-surface uppercase tracking-tight">
-            From Raw Fabricated Metal To Professional Finish
+            From Untreated Substrate To Professional Finish
           </h2>
           <p className="font-body text-body-md text-on-surface-variant mt-space-sm">
-            Drag the interactive divider to witness the transformation: untreated raw steel RHS frame transformed into a flawless, cured satin-black finish.
+            Drag the interactive divider to witness the transformation: raw mill-scale steel RHS frame transformed into a flawless, cured satin-black powder finish.
           </p>
         </div>
 
@@ -76,14 +76,14 @@ export const BeforeAfterSlider: React.FC = () => {
             <div className="relative w-[896px] h-full">
               <Image
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Ddk56yG0QrCv1LQxdWhOHFsdoxEp3cgFdNfxCcHjLHmD4CKkRA_sAGJ8kRu2PswwNSE04tP1VaW6zrANbPISOMmFc56b9LdCZBRzmCGS2yqZyjUo5-5sWboOF996riReqM8aNuHnfNoQ_1NJC5wYd8VYfLE9bcEqQvnmcaVR3eiPeEgCvnF1dOFFYVKlr9No4MaS4CZP5NplGNLj3S05OD9OUGlAtonzCIcZXYOHQO_NMtHcWfJV29ejKH3OSqGXMA"
-                alt="Before Finish Raw Fabricated Metal"
+                alt="Before Finish Raw Untreated Substrate"
                 fill
                 sizes="900px"
                 className="object-cover"
               />
             </div>
             <span className="absolute bottom-space-md left-space-md px-space-md py-space-xs bg-surface-container-lowest/90 backdrop-blur rounded font-label text-label-sm text-secondary font-bold uppercase tracking-wider whitespace-nowrap">
-              BEFORE // Raw Fabricated Steel
+              BEFORE // Untreated Steel Substrate
             </span>
           </div>
 

@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
             <div className="relative w-11 h-11 rounded-full overflow-hidden bg-white border border-outline-variant shrink-0 flex items-center justify-center shadow-md">
               <Image
                 src={SITE_CONFIG.logos.main}
-                alt="G&S Fabrication Powder Coating Logo"
+                alt="G&S Powder Coating Logo"
                 fill
                 sizes="44px"
                 className="object-cover p-0.5"
@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
                 G & S Engineering
               </span>
               <span className="font-label text-label-sm tracking-widest text-on-surface-variant uppercase">
-                Fab & Powder Coating
+                Powder Coating
               </span>
             </div>
           </Link>

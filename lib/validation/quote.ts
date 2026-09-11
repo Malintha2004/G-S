@@ -12,7 +12,16 @@ export const quoteFormSchema = z.object({
     .max(20, { message: "Phone number is too long." }),
   email: z.string().email({ message: "Please enter a valid email address." }),
   serviceRequired: z.enum(
-    ["both", "powder", "fabrication", "custom"],
+    [
+      "powder-coating",
+      "industrial-powder-coating",
+      "architectural-coating",
+      "sandblasting-pretreatment",
+      "powder",
+      "industrial",
+      "architectural",
+      "sandblasting",
+    ],
     { errorMap: () => ({ message: "Please select a valid service option." }) }
   ),
   preferredColor: z.string().max(100).optional().or(z.literal("")),
@@ -20,7 +29,7 @@ export const quoteFormSchema = z.object({
   requiredDate: z.string().optional().or(z.literal("")),
   projectScope: z
     .string()
-    .min(5, { message: "Please provide details about your project scope or part dimensions." })
+    .min(5, { message: "Please provide details about your powder coating project scope or part dimensions." })
     .max(2000, { message: "Project scope description is too long." }),
 });
 

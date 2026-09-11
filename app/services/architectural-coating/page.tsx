@@ -2,21 +2,23 @@ import React from "react";
 import { constructMetadata } from "@/lib/config/seo";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SERVICES_DATA } from "@/lib/data/services";
+import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
+import { FinishesSwatches } from "@/components/sections/FinishesSwatches";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { RfqQuoteForm } from "@/components/forms/RfqQuoteForm";
-import { Check, ShieldCheck, Wrench, Layers } from "lucide-react";
+import { Check, ShieldCheck, Sparkles, Layers } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export const metadata = constructMetadata({
-  title: "Metal Fabrication Campbellfield & Melbourne | G & S Engineering",
+  title: "Architectural Powder Coating Melbourne | G & S Engineering",
   description:
-    "Structural metal fabrication, MIG & TIG welding, plate bending, RHS/SHS steel assemblies, and custom bracketry in Campbellfield, Victoria.",
-  path: "/services/metal-fabrication",
+    "Premium decorative architectural powder coating in Campbellfield, Victoria. Exact Colorbond & RAL colour matching, Dulux/Interpon accredited thermoset polymers, matte/satin/textured finishes.",
+  path: "/services/architectural-coating",
 });
 
-export default function MetalFabricationPage() {
-  const service = SERVICES_DATA.find((s) => s.slug === "metal-fabrication");
+export default function ArchitecturalCoatingPage() {
+  const service = SERVICES_DATA.find((s) => s.slug === "architectural-coating");
   if (!service) notFound();
 
   return (
@@ -24,18 +26,18 @@ export default function MetalFabricationPage() {
       <Breadcrumbs
         items={[
           { name: "Services", href: "/services" },
-          { name: "Metal Fabrication", href: "/services/metal-fabrication" },
+          { name: "Architectural Powder Coating", href: "/services/architectural-coating" },
         ]}
       />
 
       {/* Header */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center py-space-lg mb-space-xl border-b border-outline-variant/30">
         <div className="lg:col-span-7">
-          <span className="font-label text-label-sm uppercase tracking-widest text-secondary font-bold block mb-space-xs">
-            02 // Structural Steel & Plate Engineering
+          <span className="font-label text-label-sm uppercase tracking-widest text-primary font-bold block mb-space-xs">
+            03 // Architectural Powder Coating
           </span>
           <h1 className="font-headline text-headline-hero text-headline-hero-mobile sm:text-headline-hero text-on-surface uppercase tracking-tight mb-space-md">
-            Metal Fabrication Campbellfield & Melbourne
+            Architectural Powder Coating Melbourne
           </h1>
           <p className="font-body text-body-lg text-on-surface-variant max-w-2xl mb-space-lg leading-relaxed">
             {service.fullDescription}
@@ -58,7 +60,7 @@ export default function MetalFabricationPage() {
         <div className="lg:col-span-5 relative h-[420px] rounded-xl overflow-hidden shadow-2xl border border-outline-variant/40">
           <Image
             src={service.image}
-            alt="Structural Metal Fabrication Workshop"
+            alt="Architectural Powder Coating Melbourne Facility"
             fill
             sizes="(max-width: 1024px) 100vw, 500px"
             className="object-cover"
@@ -71,8 +73,8 @@ export default function MetalFabricationPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter-lg mb-margin">
         <div className="p-space-lg rounded-xl bg-surface-container border border-outline-variant/30">
           <h3 className="font-headline text-headline-sm text-on-surface font-bold uppercase mb-space-md flex items-center gap-2">
-            <Wrench className="w-5 h-5 text-secondary" />
-            Fabrication Capabilities
+            <Layers className="w-5 h-5 text-secondary" />
+            Key Technical Features
           </h3>
           <ul className="space-y-space-xs font-body text-body-md text-on-surface-variant">
             {service.features.map((feat, idx) => (
@@ -86,8 +88,8 @@ export default function MetalFabricationPage() {
 
         <div className="p-space-lg rounded-xl bg-surface-container border border-outline-variant/30">
           <h3 className="font-headline text-headline-sm text-on-surface font-bold uppercase mb-space-md flex items-center gap-2">
-            <Layers className="w-5 h-5 text-primary" />
-            Suitable Projects & Structures
+            <Sparkles className="w-5 h-5 text-primary" />
+            Common Architectural Applications
           </h3>
           <ul className="space-y-space-xs font-body text-body-md text-on-surface-variant">
             {service.applications.map((app, idx) => (
@@ -99,6 +101,9 @@ export default function MetalFabricationPage() {
           </ul>
         </div>
       </div>
+
+      <ProcessTimeline />
+      <FinishesSwatches />
 
       <div className="my-margin" id="quote">
         <RfqQuoteForm />

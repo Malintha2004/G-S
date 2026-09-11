@@ -12,8 +12,8 @@ export const AdvantageBento: React.FC = () => {
   const advantages = [
     {
       num: "[ 01 ]",
-      title: "Quality Finish",
-      desc: "Consistent, pinhole-free industrial grade results. Every batch is rigorously monitored for cure temperature, adhesion strength, and uniform mil thickness.",
+      title: "Flawless Quality Finish",
+      desc: "Consistent, pinhole-free industrial grade results. Every batch is rigorously monitored for cure temperature, powder adhesion strength, and uniform micron thickness.",
       icon: CheckCircle,
     },
     {
@@ -24,26 +24,26 @@ export const AdvantageBento: React.FC = () => {
     },
     {
       num: "[ 03 ]",
-      title: "High Precision",
-      desc: "High-tolerance fabrication with clean, de-burred edges, flush welds, exact hole alignments, and precision heat-resistant masking for threads and machined faces.",
+      title: "High Precision Masking",
+      desc: "Meticulous pre-coating prep with clean de-burring, surface profiling, and precision heat-resistant masking for threads, bearing fits, and machined faces.",
       icon: Ruler,
     },
     {
       num: "[ 04 ]",
-      title: "Full In-House Facility",
-      desc: "End-to-end fabrication, welding, chemical pretreatment, and powder application all at 179 Barry Road. Cuts transport overhead and turnaround time in half.",
+      title: "Complete In-House Facility",
+      desc: "Multi-stage chemical wash pretreatment, abrasive sandblasting booth, electrostatic spray bay, and 8.0m batch oven all under one roof at 179 Barry Road.",
       icon: Warehouse,
     },
     {
       num: "[ 05 ]",
-      title: "Custom Solutions",
-      desc: "No job is too specialized. We handle one-off prototypes, bespoke architectural fixtures, custom vehicle components, as well as ongoing multi-pallet commercial runs.",
+      title: "Custom Powder Options",
+      desc: "No job is too specialized. We handle one-off custom colour matches, bespoke architectural louvres, vehicle canopy parts, as well as ongoing volume commercial runs.",
       icon: Sliders,
     },
     {
       num: "[ 06 ]",
       title: "Direct Line Service",
-      desc: "Speak directly with the fabricator and coater managing your job. Fast RFQ quotes within 24 hours, realistic completion commitments, and clear progress updates.",
+      desc: "Speak directly with the master coater managing your job. Fast RFQ quotes within 24 hours, realistic completion commitments, and clear progress updates.",
       icon: Headphones,
     },
   ];
@@ -56,10 +56,10 @@ export const AdvantageBento: React.FC = () => {
             The G & S Advantage
           </span>
           <h2 className="font-headline text-headline-lg text-on-surface uppercase tracking-tight">
-            Built on Quality & Mechanical Precision
+            Built on Coating Quality & Surface Integrity
           </h2>
           <p className="font-body text-body-md text-on-surface-variant mt-space-sm">
-            Melbourne contractors, architects, and engineering procurement teams rely on G & S for dependable turnaround and uncompromising adherence to Australian standards.
+            Melbourne contractors, architects, and industrial procurement teams rely on G & S for dependable turnaround and uncompromising adherence to Australian powder coating standards.
           </p>
         </div>
 

@@ -11,7 +11,7 @@ export const RfqQuoteForm: React.FC = () => {
     companyName: "",
     phone: "",
     email: "",
-    serviceRequired: "both",
+    serviceRequired: "powder-coating",
     preferredColor: "",
     estimatedQuantity: "",
     requiredDate: "",
@@ -92,7 +92,7 @@ export const RfqQuoteForm: React.FC = () => {
           companyName: "",
           phone: "",
           email: "",
-          serviceRequired: "both",
+          serviceRequired: "powder-coating",
           preferredColor: "",
           estimatedQuantity: "",
           requiredDate: "",
@@ -122,7 +122,7 @@ export const RfqQuoteForm: React.FC = () => {
         Request A Commercial Specification Quote
       </h3>
       <p className="font-body text-body-sm text-on-surface-variant mb-space-lg">
-        Upload CAD files, part dimensions, or batch quantities. Our workshop estimators respond with confirmed pricing and production lead times within 24 hours.
+        Upload part diagrams, dimensions, or batch quantities. Our workshop estimators respond with confirmed pricing and production lead times within 24 hours.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-space-md" noValidate>
@@ -158,7 +158,7 @@ export const RfqQuoteForm: React.FC = () => {
               name="companyName"
               value={formData.companyName}
               onChange={handleInputChange}
-              placeholder="Prime Steelworks Pty Ltd"
+              placeholder="Prime Metals Pty Ltd"
               className="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg border border-outline-variant/30 focus:outline-none focus:ring-2 focus:ring-primary font-body text-body-md"
             />
           </div>
@@ -221,10 +221,10 @@ export const RfqQuoteForm: React.FC = () => {
               onChange={handleInputChange}
               className="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg border border-outline-variant/30 focus:outline-none focus:ring-2 focus:ring-primary font-body text-body-md"
             >
-              <option value="both">Both Metal Fabrication & Powder Coating</option>
-              <option value="powder">Powder Coating Only</option>
-              <option value="fabrication">Metal Fabrication / Welding Only</option>
-              <option value="custom">Custom Architectural Prototype</option>
+              <option value="powder-coating">Commercial & Batch Powder Coating</option>
+              <option value="industrial-powder-coating">Industrial Powder Coating</option>
+              <option value="architectural-coating">Architectural Powder Coating</option>
+              <option value="sandblasting-pretreatment">Sandblasting & Surface Prep</option>
             </select>
           </div>
 
@@ -254,7 +254,7 @@ export const RfqQuoteForm: React.FC = () => {
               name="estimatedQuantity"
               value={formData.estimatedQuantity}
               onChange={handleInputChange}
-              placeholder="e.g. 25 frames, 100 brackets, 1 off"
+              placeholder="e.g. 25 frames, 100 posts, 1 off"
               className="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg border border-outline-variant/30 focus:outline-none focus:ring-2 focus:ring-primary font-body text-body-md"
             />
           </div>
@@ -283,7 +283,7 @@ export const RfqQuoteForm: React.FC = () => {
             rows={4}
             value={formData.projectScope}
             onChange={handleInputChange}
-            placeholder="Detail part lengths, steel gauge/material, pretreatment needs, or delivery requirements..."
+            placeholder="Detail part lengths, metal substrate, pretreatment needs, sandblasting requirements, or delivery deadline..."
             className={`w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg border focus:outline-none focus:ring-2 focus:ring-primary font-body text-body-md ${
               errors.projectScope ? "border-error" : "border-outline-variant/30"
             }`}
@@ -302,11 +302,11 @@ export const RfqQuoteForm: React.FC = () => {
             onChange={handleFileChange}
             accept=".pdf,.dxf,.step,.stp,.dwg,.jpg,.jpeg,.png,.webp"
             className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-            aria-label="Upload CAD drawings or images"
+            aria-label="Upload part diagrams or images"
           />
           <Upload className="w-6 h-6 text-primary mx-auto mb-1" />
           <p className="font-label text-label-sm text-on-surface font-semibold">
-            {selectedFile ? `Attached: ${selectedFile.name}` : "Click to attach Drawings / PDF / STEP / DXF"}
+            {selectedFile ? `Attached: ${selectedFile.name}` : "Click to attach Drawings / PDF / STEP / DXF / Photos"}
           </p>
           <span className="font-body text-body-sm text-on-surface-variant block">
             Max file size 25MB (PDF, CAD DXF/STEP, JPG, PNG)
@@ -325,7 +325,7 @@ export const RfqQuoteForm: React.FC = () => {
           className="w-full py-space-md bg-secondary-container text-on-secondary-container font-label text-label-lg font-bold uppercase tracking-wider rounded-lg hover:bg-secondary-bright transition-all shadow-md flex items-center justify-center gap-2 disabled:opacity-50"
         >
           <Send className="w-5 h-5" />
-          {isSubmitting ? "Processing RFQ..." : "Submit Spec For Factory Quote"}
+          {isSubmitting ? "Processing RFQ..." : "Submit Spec For Workshop Quote"}
         </button>
 
         {/* Feedback Messages */}

@@ -5,13 +5,13 @@ import { TrustSection } from "@/components/sections/TrustSection";
 import { AdvantageBento } from "@/components/sections/AdvantageBento";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { SITE_CONFIG } from "@/lib/config/site";
-import { Factory, ShieldCheck, Wrench, CheckCircle2 } from "lucide-react";
+import { Factory, ShieldCheck, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = constructMetadata({
-  title: "About G & S Engineering | Campbellfield Metalwork Facility",
+  title: "About G & S Engineering | Campbellfield Powder Coating Facility",
   description:
-    "Learn about G & S Engineering at 179 Barry Road, Campbellfield. Full-service commercial powder coating and heavy metal fabrication under one roof.",
+    "Learn about G & S Engineering at 179 Barry Road, Campbellfield. Dedicated commercial powder coating, sandblasting, and surface preparation specialists.",
   path: "/about",
 });
 
@@ -30,7 +30,7 @@ export default function AboutPage() {
           About {SITE_CONFIG.name}
         </h1>
         <p className="font-body text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
-          Located in the heart of Campbellfield&apos;s manufacturing corridor, {SITE_CONFIG.name} provides integrated commercial metal fabrication and electrostatic powder coating services under one factory roof.
+          Located in the heart of Campbellfield&apos;s manufacturing corridor, {SITE_CONFIG.name} provides professional commercial powder coating, abrasive sandblasting, and electrostatic surface finishing under one workshop roof.
         </p>
       </div>
 
@@ -42,19 +42,19 @@ export default function AboutPage() {
             Campbellfield Industrial Standard
           </div>
           <h2 className="font-headline text-headline-lg text-on-surface uppercase tracking-tight">
-            Integrated Chain of Custody
+            Single Chain of Custody Surface Finishing
           </h2>
           <p className="font-body text-body-md text-on-surface-variant leading-relaxed">
-            By operating full fabrication, welding, chemical pretreatment, and powder application facilities at 179 Barry Road, we remove intermediate transport overheads and eliminate inter-supplier disputes over quality or tolerances.
+            By operating abrasive sandblasting, chemical pretreatment, electrostatic application, and batch oven curing at 179 Barry Road, we remove intermediate transport overheads and guarantee 100% surface integrity on every job.
           </p>
           <ul className="space-y-space-xs font-label text-label-md text-on-surface">
             <li className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-secondary shrink-0" />
-              <span>8.0 Metre Batch Curing Oven for Oversized Assemblies</span>
+              <span>8.0 Metre Batch Curing Oven for Oversized Elements</span>
             </li>
             <li className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-secondary shrink-0" />
-              <span>Full MIG & TIG Welding Bays for Mild Steel, Alloy & Stainless</span>
+              <span>Abrasive Sandblasting & Multi-Stage Chemical Wash Bays</span>
             </li>
             <li className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-secondary shrink-0" />

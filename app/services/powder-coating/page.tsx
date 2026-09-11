@@ -11,9 +11,9 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export const metadata = constructMetadata({
-  title: "Powder Coating Campbellfield & Melbourne | G & S Engineering",
+  title: "Commercial & Batch Powder Coating Campbellfield | G & S Engineering",
   description:
-    "Industrial commercial powder coating in Campbellfield, Victoria. Dulux & Interpon accredited powders, 8.0m batch oven bay, electrostatic 100kV corona wrap, micron testing.",
+    "Commercial and batch electrostatic powder coating in Campbellfield, Victoria. Dulux & Interpon accredited powders, 8.0m batch oven bay, electrostatic 100kV corona wrap, micron testing.",
   path: "/services/powder-coating",
 });
 
@@ -26,7 +26,7 @@ export default function PowderCoatingPage() {
       <Breadcrumbs
         items={[
           { name: "Services", href: "/services" },
-          { name: "Powder Coating", href: "/services/powder-coating" },
+          { name: "Commercial & Batch Powder Coating", href: "/services/powder-coating" },
         ]}
       />
 
@@ -34,10 +34,10 @@ export default function PowderCoatingPage() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center py-space-lg mb-space-xl border-b border-outline-variant/30">
         <div className="lg:col-span-7">
           <span className="font-label text-label-sm uppercase tracking-widest text-primary font-bold block mb-space-xs">
-            01 // Industrial Powder Coating Service
+            01 // Commercial & Batch Powder Coating
           </span>
           <h1 className="font-headline text-headline-hero text-headline-hero-mobile sm:text-headline-hero text-on-surface uppercase tracking-tight mb-space-md">
-            Powder Coating Campbellfield & Melbourne
+            Commercial & Batch Powder Coating
           </h1>
           <p className="font-body text-body-lg text-on-surface-variant max-w-2xl mb-space-lg leading-relaxed">
             {service.fullDescription}
@@ -60,7 +60,7 @@ export default function PowderCoatingPage() {
         <div className="lg:col-span-5 relative h-[420px] rounded-xl overflow-hidden shadow-2xl border border-outline-variant/40">
           <Image
             src={service.image}
-            alt="Powder Coating Campbellfield Facility"
+            alt="Commercial Powder Coating Campbellfield Facility"
             fill
             sizes="(max-width: 1024px) 100vw, 500px"
             className="object-cover"

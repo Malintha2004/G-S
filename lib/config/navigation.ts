@@ -15,8 +15,8 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const SERVICE_NAV_ITEMS: NavItem[] = [
-  { title: "Powder Coating", href: "/services/powder-coating" },
-  { title: "Metal Fabrication", href: "/services/metal-fabrication" },
-  { title: "Custom Fabrication", href: "/services/custom-fabrication" },
-  { title: "Industrial Finishing", href: "/services/industrial-finishing" },
+  { title: "Commercial & Batch Powder Coating", href: "/services/powder-coating" },
+  { title: "Industrial Powder Coating", href: "/services/industrial-powder-coating" },
+  { title: "Architectural Powder Coating", href: "/services/architectural-coating" },
+  { title: "Sandblasting & Surface Prep", href: "/services/sandblasting-pretreatment" },
 ];

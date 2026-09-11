@@ -12,10 +12,10 @@ export const ServicesSection: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
           <div>
             <span className="font-label text-label-sm uppercase tracking-widest text-primary font-bold block mb-space-xs">
-              Core Production Capabilities
+              Powder Coating & Surface Finishing
             </span>
             <h2 className="font-headline text-headline-lg text-on-surface uppercase tracking-tight">
-              Integrated Metal Services
+              Specialized Coating Services
             </h2>
           </div>
           <p className="font-body text-body-sm text-on-surface-variant max-w-md mt-space-sm md:mt-0">

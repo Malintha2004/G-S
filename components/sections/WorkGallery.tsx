@@ -11,10 +11,10 @@ export const WorkGallery: React.FC = () => {
 
   const filters = [
     { id: "all", label: "All Projects" },
-    { id: "powder", label: "Powder Coating" },
-    { id: "fabrication", label: "Metal Fabrication" },
-    { id: "industrial", label: "Industrial Dual Booth" },
-    { id: "custom", label: "Architectural Custom" },
+    { id: "commercial", label: "Commercial Batch" },
+    { id: "industrial", label: "Industrial Coating" },
+    { id: "architectural", label: "Architectural Custom" },
+    { id: "sandblasting", label: "Sandblasting & Prep" },
   ];
 
   const isFiltered = activeFilter !== "all";
@@ -51,11 +51,11 @@ export const WorkGallery: React.FC = () => {
               Proof of Craftsmanship
             </span>
             <h2 className="font-headline text-headline-lg text-on-surface uppercase tracking-tight">
-              See Our Work In The Factory
+              See Our Work In The Workshop
             </h2>
           </div>
           <p className="font-body text-body-sm text-on-surface-variant max-w-md mt-space-sm md:mt-0">
-            Unfiltered photographs from our Campbellfield shop floor showing real commercial fabrication and high-specification coatings.
+            Unfiltered photographs from our Campbellfield shop floor showing real commercial powder coating runs and high-specification finishes.
           </p>
         </div>
 

@@ -16,9 +16,9 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = constructMetadata({
-  title: "G & S Engineering | Powder Coating & Metal Fabrication Campbellfield",
+  title: "G & S Engineering | Commercial Powder Coating Campbellfield Melbourne",
   description:
-    "Direct workshop quality commercial powder coating and structural metal fabrication at 179 Barry Road, Campbellfield. 8.0m batch oven, MIG/TIG welding, and Dulux accredited finishes.",
+    "Direct workshop quality commercial powder coating and powder painting at 179 Barry Road, Campbellfield. 8.0m batch oven, abrasive sandblasting, chemical pretreatment, and Dulux accredited finishes.",
 });
 
 export default function HomePage() {
@@ -67,7 +67,7 @@ export default function HomePage() {
                   <div className="relative w-10 h-10 rounded-full overflow-hidden bg-white shrink-0 flex items-center justify-center p-0.5 border border-outline-variant shadow">
                     <Image
                       src={SITE_CONFIG.logos.main}
-                      alt="G&S Fabrication Powder Coating Logo"
+                      alt="G&S Powder Coating Logo"
                       fill
                       sizes="40px"
                       className="object-cover"
