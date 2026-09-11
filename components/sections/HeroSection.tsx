@@ -28,7 +28,7 @@ export const HeroSection: React.FC = () => {
             {SITE_CONFIG.address.full}
           </span>
           <span className="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-tertiary font-label text-label-md tracking-wider uppercase">
-            Commercial Powder Coating & Surface Preparation
+            Commercial & Industrial Powder Coating
           </span>
         </div>
 
@@ -44,8 +44,7 @@ export const HeroSection: React.FC = () => {
               Professional{" "}
               <span className="text-primary underline decoration-secondary-container decoration-4 underline-offset-8">
                 Powder Coating
-              </span>{" "}
-              & Surface Finishing
+              </span>
             </h1>
             <p className="font-body text-body-lg text-on-surface-variant max-w-2xl mb-space-lg leading-relaxed">
               Durable finishes. Vibrant colour options. Precision surface preparation. Servicing Melbourne’s northern industrial corridor with high-voltage electrostatic application, abrasive sandblasting, chemical pretreatment, and batch oven curing up to 8 metres.
