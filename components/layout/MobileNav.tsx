@@ -67,13 +67,13 @@ export const MobileNav: React.FC = () => {
       {isOpen && (
         <div
           id="mobile-navigation"
-          className="fixed inset-x-0 top-20 bottom-0 z-50 w-full bg-[#0a0e13] text-on-surface overflow-y-auto border-t border-outline-variant/30 shadow-2xl p-4 sm:p-6"
+          className="fixed left-0 right-0 inset-x-0 top-20 bottom-0 z-50 w-full bg-[#0a0e13] text-on-surface overflow-y-auto border-t border-outline-variant/30 shadow-2xl p-4 sm:p-6"
           style={{ backgroundColor: "#0a0e13", opacity: 1 }}
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation menu"
         >
-          <div className="max-w-xl mx-auto w-full flex flex-col justify-between min-h-full py-2">
+          <div className="w-full flex flex-col justify-between min-h-full py-2">
             <div>
               {/* Menu Section Header */}
               <div className="flex items-center justify-between border-b border-outline-variant/30 pb-3 mb-4">
