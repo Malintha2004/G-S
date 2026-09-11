@@ -63,34 +63,30 @@ export const MobileNav: React.FC = () => {
         )}
       </button>
 
-      {/* Mobile navigation backdrop and panel below the header */}
+      {/* Full-width, 100% solid opaque dark mobile navigation panel directly below the header */}
       {isOpen && (
         <div
-          className="fixed inset-x-0 top-20 bottom-0 z-[50] bg-black/60"
-          onClick={() => setIsOpen(false)}
+          id="mobile-navigation"
+          className="fixed inset-x-0 top-20 bottom-0 z-50 w-full bg-[#0a0e13] text-on-surface overflow-y-auto border-t border-outline-variant/30 shadow-2xl p-4 sm:p-6"
+          style={{ backgroundColor: "#0a0e13", opacity: 1 }}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mobile navigation menu"
         >
-          <div
-            id="mobile-navigation"
-            className="h-full w-[calc(100%-1rem)] max-w-xl ml-auto overflow-y-auto border-t border-outline-variant/30 bg-[#0a0e13] text-on-surface p-4 shadow-2xl sm:p-6"
-            role="dialog"
-            aria-modal="true"
-            aria-label="Mobile navigation"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="max-w-xl mx-auto w-full flex flex-col justify-between min-h-full py-2">
-              <div>
-                {/* Menu Section Header */}
-                <div className="flex items-center justify-between border-b border-outline-variant/30 pb-3 mb-4">
-                  <span className="font-label text-xs uppercase tracking-widest text-primary font-bold">
-                    Navigation Menu
-                  </span>
-                  <span className="font-label text-[11px] text-on-surface-variant uppercase">
-                    Campbellfield Workshop
-                  </span>
-                </div>
+          <div className="max-w-xl mx-auto w-full flex flex-col justify-between min-h-full py-2">
+            <div>
+              {/* Menu Section Header */}
+              <div className="flex items-center justify-between border-b border-outline-variant/30 pb-3 mb-4">
+                <span className="font-label text-xs uppercase tracking-widest text-primary font-bold">
+                  Navigation Menu
+                </span>
+                <span className="font-label text-[11px] text-on-surface-variant uppercase font-semibold">
+                  Campbellfield Workshop
+                </span>
+              </div>
 
-                {/* Main Vertically Stacked Navigation Links */}
-                <nav className="flex flex-col space-y-1.5">
+              {/* Main Vertically Stacked Navigation Links */}
+              <nav className="flex flex-col space-y-1.5" aria-label="Main Mobile Navigation">
                 {NAV_ITEMS.map((item) => {
                   const isActive =
                     pathname === item.href ||
@@ -111,10 +107,10 @@ export const MobileNav: React.FC = () => {
                     </Link>
                   );
                 })}
-                </nav>
+              </nav>
 
-                {/* Service Quick Links Section */}
-                <div className="mt-6 pt-4 border-t border-outline-variant/30">
+              {/* Service Quick Links Section */}
+              <div className="mt-6 pt-4 border-t border-outline-variant/30">
                 <span className="font-label text-xs uppercase tracking-widest text-secondary font-bold block mb-2.5">
                   Specialized Coating Services
                 </span>
@@ -131,8 +127,8 @@ export const MobileNav: React.FC = () => {
                     </Link>
                   ))}
                 </div>
-                </div>
               </div>
+            </div>
 
             {/* Bottom Actions & Contact Info */}
             <div className="mt-8 pt-5 border-t border-outline-variant/40 space-y-4">
@@ -180,7 +176,6 @@ export const MobileNav: React.FC = () => {
                 {SITE_CONFIG.address.full}
               </div>
             </div>
-          </div>
           </div>
         </div>
       )}
