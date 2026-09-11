@@ -14,11 +14,11 @@ export const Header: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/30">
-      <div className="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md">
+      <div className="h-20 max-w-7xl mx-auto px-3 sm:px-gutter flex items-center justify-between gap-1.5 sm:gap-space-md">
         {/* Brand Logo & Title */}
-        <div className="flex items-center gap-space-md shrink-0">
-          <Link href="/" className="flex items-center gap-space-sm group">
-            <div className="relative w-11 h-11 rounded-full overflow-hidden bg-white border border-outline-variant shrink-0 flex items-center justify-center shadow-md">
+        <div className="flex items-center gap-2 sm:gap-space-md shrink min-w-0">
+          <Link href="/" className="flex items-center gap-1.5 sm:gap-space-sm group min-w-0">
+            <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full overflow-hidden bg-white border border-outline-variant shrink-0 flex items-center justify-center shadow-md">
               <Image
                 src={SITE_CONFIG.logos.main}
                 alt="G&S Powder Coating Logo"
@@ -28,11 +28,11 @@ export const Header: React.FC = () => {
                 priority
               />
             </div>
-            <div className="flex flex-col">
-              <span className="font-headline text-headline-sm font-bold tracking-tight text-on-surface uppercase">
+            <div className="flex flex-col min-w-0 overflow-hidden">
+              <span className="font-headline text-xs sm:text-headline-sm font-bold tracking-tight text-on-surface uppercase truncate">
                 G & S Engineering
               </span>
-              <span className="font-label text-label-sm tracking-widest text-on-surface-variant uppercase">
+              <span className="font-label text-[9px] sm:text-label-sm tracking-widest text-on-surface-variant uppercase truncate">
                 Powder Coating
               </span>
             </div>
@@ -62,7 +62,7 @@ export const Header: React.FC = () => {
         </nav>
 
         {/* Right CTA Actions */}
-        <div className="flex items-center gap-space-md shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-space-md shrink-0">
           <div className="hidden md:flex flex-col text-right">
             <span className="font-label text-label-sm uppercase tracking-widest text-on-surface-variant">
               Dispatch & Enquiries
@@ -88,9 +88,9 @@ export const Header: React.FC = () => {
 
           <Link
             href="/contact#quote"
-            className="inline-flex items-center justify-center px-space-md py-space-sm bg-secondary-container text-on-secondary-container font-label text-label-md font-bold uppercase tracking-wider rounded-lg hover:bg-secondary-bright transition-colors shadow-sm"
+            className="inline-flex items-center justify-center px-2 sm:px-space-md py-1.5 sm:py-space-sm bg-secondary-container text-on-secondary-container font-label text-[11px] sm:text-label-md font-bold uppercase tracking-normal sm:tracking-wider rounded-lg hover:bg-secondary-bright transition-colors shadow-sm whitespace-nowrap shrink-0"
           >
-            <FileText className="w-4 h-4 mr-1" />
+            <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1 shrink-0" />
             Get a Quote
           </Link>
 
