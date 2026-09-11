@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NAV_ITEMS } from "@/lib/config/navigation";
 import { SITE_CONFIG } from "@/lib/config/site";
-import { Menu, X, Phone, FileText } from "lucide-react";
+import { Menu, X, Phone, Mail, FileText } from "lucide-react";
 
 export const MobileNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,8 +74,15 @@ export const MobileNav: React.FC = () => {
                 {SITE_CONFIG.phones.primary}
               </a>
               <a
+                href={`mailto:${SITE_CONFIG.email}`}
+                className="font-label text-label-md font-semibold text-on-surface hover:text-primary flex items-center gap-space-xs py-1"
+              >
+                <Mail className="w-4 h-4 text-primary" />
+                {SITE_CONFIG.email}
+              </a>
+              <a
                 href={`tel:${SITE_CONFIG.phones.secondaryRaw}`}
-                className="font-label text-label-md font-semibold text-on-surface-variant hover:text-primary flex items-center gap-space-xs py-1"
+                className="font-label text-label-sm font-semibold text-on-surface-variant hover:text-primary flex items-center gap-space-xs py-1"
               >
                 <Phone className="w-4 h-4 text-secondary" />
                 Alt: {SITE_CONFIG.phones.secondary}

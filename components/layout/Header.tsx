@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { NAV_ITEMS } from "@/lib/config/navigation";
 import { SITE_CONFIG } from "@/lib/config/site";
 import { MobileNav } from "./MobileNav";
-import { Phone, FileText } from "lucide-react";
+import { Phone, Mail, FileText } from "lucide-react";
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
@@ -67,13 +67,23 @@ export const Header: React.FC = () => {
             <span className="font-label text-label-sm uppercase tracking-widest text-on-surface-variant">
               Dispatch & Enquiries
             </span>
-            <a
-              href={`tel:${SITE_CONFIG.phones.primaryRaw}`}
-              className="font-label text-label-md text-on-surface font-semibold hover:text-primary transition-colors flex items-center justify-end gap-space-xs"
-            >
-              <Phone className="w-4 h-4 text-primary" />
-              {SITE_CONFIG.phones.primary}
-            </a>
+            <div className="flex items-center justify-end gap-space-xs">
+              <a
+                href={`tel:${SITE_CONFIG.phones.primaryRaw}`}
+                className="font-label text-label-md text-on-surface font-semibold hover:text-primary transition-colors flex items-center gap-space-xs"
+              >
+                <Phone className="w-4 h-4 text-primary" />
+                {SITE_CONFIG.phones.primary}
+              </a>
+              <a
+                href={`mailto:${SITE_CONFIG.email}`}
+                className="font-label text-label-md text-on-surface hover:text-primary transition-colors flex items-center p-1 rounded hover:bg-surface-container-high ml-1"
+                aria-label={`Email ${SITE_CONFIG.email}`}
+                title={`Email ${SITE_CONFIG.email}`}
+              >
+                <Mail className="w-4 h-4 text-primary" />
+              </a>
+            </div>
           </div>
 
           <Link
