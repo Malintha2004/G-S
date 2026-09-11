@@ -39,10 +39,10 @@ export const MobileNav: React.FC = () => {
 
   return (
     <div className="xl:hidden">
-      {/* Hamburger / Close Toggle Button */}
+      {/* Hamburger / Close Toggle Button in Header */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="p-2 text-on-surface hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-lg bg-surface-container border border-outline-variant/30 transition-colors z-50 relative shrink-0"
+        className="p-2 text-on-surface hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-lg bg-surface-container border border-outline-variant/30 transition-colors relative z-50 shrink-0"
         aria-label={isOpen ? "Close Navigation Menu" : "Open Navigation Menu"}
         aria-expanded={isOpen}
       >
@@ -53,26 +53,26 @@ export const MobileNav: React.FC = () => {
         )}
       </button>
 
-      {/* Full-Screen Mobile Drawer Overlay */}
+      {/* Solid Full-Width Mobile Dropdown Overlay Directly Below Header */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-40 bg-background/80 backdrop-blur-md flex flex-col justify-between overflow-y-auto animate-in fade-in duration-200"
+          className="fixed top-20 left-0 right-0 bottom-0 z-40 bg-surface-container-lowest w-full overflow-y-auto border-t border-outline-variant/30 flex flex-col justify-between p-4 sm:p-gutter shadow-2xl animate-in fade-in duration-150"
           role="dialog"
           aria-modal="true"
-          onClick={() => setIsOpen(false)}
         >
-          {/* Main Mobile Navigation Content Box */}
-          <div
-            className="w-full max-w-lg ml-auto min-h-screen bg-surface-container-lowest border-l border-outline-variant/30 p-gutter pt-24 pb-space-xl flex flex-col justify-between shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className="max-w-2xl mx-auto w-full flex flex-col justify-between min-h-full py-2">
             <div>
-              {/* Menu Section Title */}
-              <span className="font-label text-[11px] uppercase tracking-widest text-primary font-bold block mb-space-sm border-b border-outline-variant/20 pb-1">
-                Navigation Menu
-              </span>
+              {/* Menu Section Header */}
+              <div className="flex items-center justify-between border-b border-outline-variant/20 pb-2 mb-3">
+                <span className="font-label text-[11px] uppercase tracking-widest text-primary font-bold">
+                  Navigation Menu
+                </span>
+                <span className="font-label text-[10px] text-on-surface-variant uppercase">
+                  Campbellfield Workshop
+                </span>
+              </div>
 
-              {/* Main 8 Nav Links */}
+              {/* Main Vertically Stacked Navigation Links */}
               <nav className="flex flex-col space-y-1">
                 {NAV_ITEMS.map((item) => {
                   const isActive =
@@ -83,7 +83,7 @@ export const MobileNav: React.FC = () => {
                       key={item.href}
                       href={item.href}
                       onClick={() => setIsOpen(false)}
-                      className={`font-headline text-lg sm:text-headline-sm uppercase font-bold py-2.5 px-3 rounded-lg flex items-center justify-between transition-all ${
+                      className={`font-headline text-base sm:text-headline-sm uppercase font-bold py-2.5 px-3 rounded-lg flex items-center justify-between transition-all ${
                         isActive
                           ? "bg-primary/10 text-primary border-l-4 border-primary font-bold pl-4"
                           : "text-on-surface hover:bg-surface-container-high hover:text-primary"
@@ -97,17 +97,17 @@ export const MobileNav: React.FC = () => {
               </nav>
 
               {/* Service Quick Links Section */}
-              <div className="mt-6 pt-4 border-t border-outline-variant/20">
+              <div className="mt-5 pt-3 border-t border-outline-variant/20">
                 <span className="font-label text-[10px] uppercase tracking-widest text-secondary font-bold block mb-2">
-                  Our Coating Services
+                  Specialized Coating Services
                 </span>
-                <div className="grid grid-cols-1 gap-1">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
                   {SERVICE_NAV_ITEMS.map((srv) => (
                     <Link
                       key={srv.href}
                       href={srv.href}
                       onClick={() => setIsOpen(false)}
-                      className="font-body text-xs text-on-surface-variant hover:text-primary py-1 px-2 rounded hover:bg-surface-container-low transition-colors flex items-center gap-1.5"
+                      className="font-body text-xs text-on-surface-variant hover:text-primary py-1.5 px-2 rounded hover:bg-surface-container-low transition-colors flex items-center gap-1.5"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-secondary shrink-0" />
                       {srv.title}
@@ -118,46 +118,48 @@ export const MobileNav: React.FC = () => {
             </div>
 
             {/* Bottom Actions & Contact Info */}
-            <div className="mt-8 pt-6 border-t border-outline-variant/40 space-y-4">
+            <div className="mt-6 pt-4 border-t border-outline-variant/40 space-y-3">
               {/* Primary Get a Quote CTA */}
               <Link
                 href="/contact#quote"
                 onClick={() => setIsOpen(false)}
-                className="inline-flex items-center justify-center w-full py-3 bg-secondary-container text-on-secondary-container font-label text-sm font-bold uppercase tracking-wider rounded-lg shadow-md hover:bg-secondary-bright transition-colors text-center"
+                className="inline-flex items-center justify-center w-full py-3 bg-secondary-container text-on-secondary-container font-label text-xs sm:text-sm font-bold uppercase tracking-wider rounded-lg shadow-md hover:bg-secondary-bright transition-colors text-center"
               >
                 <FileText className="w-4 h-4 mr-2 shrink-0" />
-                Get A Direct Quote
+                Get A Direct Workshop Quote
               </Link>
 
               {/* Direct Phones & Email */}
               <div className="p-3 rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col gap-1.5 font-label text-xs">
                 <span className="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold">
-                  Direct Workshop Dispatch
+                  Direct Dispatch & Enquiries
                 </span>
-                <a
-                  href={`tel:${SITE_CONFIG.phones.primaryRaw}`}
-                  className="font-bold text-on-surface hover:text-primary flex items-center gap-2 py-0.5"
-                >
-                  <Phone className="w-3.5 h-3.5 text-primary shrink-0" />
-                  {SITE_CONFIG.phones.primary}
-                </a>
-                <a
-                  href={`tel:${SITE_CONFIG.phones.secondaryRaw}`}
-                  className="font-semibold text-on-surface-variant hover:text-primary flex items-center gap-2 py-0.5"
-                >
-                  <Phone className="w-3.5 h-3.5 text-secondary shrink-0" />
-                  Alt: {SITE_CONFIG.phones.secondary}
-                </a>
+                <div className="flex flex-wrap items-center justify-between gap-2 pt-0.5">
+                  <a
+                    href={`tel:${SITE_CONFIG.phones.primaryRaw}`}
+                    className="font-bold text-on-surface hover:text-primary flex items-center gap-1.5"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-primary shrink-0" />
+                    {SITE_CONFIG.phones.primary}
+                  </a>
+                  <a
+                    href={`tel:${SITE_CONFIG.phones.secondaryRaw}`}
+                    className="font-semibold text-on-surface-variant hover:text-primary flex items-center gap-1.5"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-secondary shrink-0" />
+                    Alt: {SITE_CONFIG.phones.secondary}
+                  </a>
+                </div>
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
-                  className="font-semibold text-on-surface-variant hover:text-primary flex items-center gap-2 py-0.5 break-all"
+                  className="font-semibold text-on-surface-variant hover:text-primary flex items-center gap-1.5 pt-0.5 break-all"
                 >
                   <Mail className="w-3.5 h-3.5 text-primary shrink-0" />
                   {SITE_CONFIG.email}
                 </a>
               </div>
 
-              <div className="text-center font-label text-[11px] text-tertiary">
+              <div className="text-center font-label text-[10px] sm:text-[11px] text-tertiary">
                 {SITE_CONFIG.address.full}
               </div>
             </div>
