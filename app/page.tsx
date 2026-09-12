@@ -18,7 +18,7 @@ import Image from "next/image";
 export const metadata = constructMetadata({
   title: "G & S Engineering | Commercial Powder Coating Campbellfield Melbourne",
   description:
-    "Direct workshop quality commercial powder coating and powder painting at 179 Barry Road, Campbellfield. 8.0m batch oven, abrasive sandblasting, chemical pretreatment, and Dulux accredited finishes.",
+    "Direct workshop quality commercial powder coating and powder painting at 179 Barry Road, Campbellfield. 8.0m batch oven, chemical pretreatment, and Dulux accredited finishes.",
 });
 
 export default function HomePage() {

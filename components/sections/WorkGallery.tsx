@@ -14,7 +14,6 @@ export const WorkGallery: React.FC = () => {
     { id: "commercial", label: "Commercial Batch" },
     { id: "industrial", label: "Industrial Coating" },
     { id: "architectural", label: "Architectural Custom" },
-    { id: "sandblasting", label: "Sandblasting & Prep" },
   ];
 
   const isFiltered = activeFilter !== "all";

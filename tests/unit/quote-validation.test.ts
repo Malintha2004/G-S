@@ -8,7 +8,7 @@ describe("Quote Form Validation", () => {
     const validInput = {
       fullName: "John Smith",
       companyName: "Apex Metals",
-      phone: "0415668527",
+      phone: "0493627019",
       email: "john@apexmetals.com.au",
       serviceRequired: "powder-coating",
       preferredColor: "Satin Black",

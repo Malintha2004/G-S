@@ -112,37 +112,4 @@ export const SERVICES_DATA: ServiceDetail[] = [
       { label: "Quality Inspection", value: "Visual & Gloss Meter Verification" },
     ],
   },
-  {
-    id: "sandblasting-pretreatment",
-    slug: "sandblasting-pretreatment",
-    number: "04",
-    badge: "SURFACE PREP",
-    title: "Sandblasting & Surface Preparation",
-    shortDescription:
-      "Essential pre-coating surface preparation: abrasive sandblasting, rust and scale removal, degreasing, and multi-stage chemical pretreatment wash.",
-    fullDescription:
-      "Flawless powder coating durability begins with complete surface preparation. As an integral part of our powder coating process at 179 Barry Road, we utilize abrasive sandblasting to etch raw or weathered metal surfaces, removing rust, mill scale, and old paint while creating the ideal mechanical key anchor profile for long-lasting powder adhesion.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCMiKIr2ENNocNXWYbn5PbUdQ3V4laA_CajFwDIA6RuPwYOD3iY_oHbofuXH_7MXxGyYyrpUkWf53TWtYyITLThx_mc0S3XOAOh3dQ-IXy-XGWGixdJLVcinOB9Ku7g77UcAsyQhrmF_x8t1l-V1ewYf_LiXXU_sC004zxLuEHtDMNM4BDA8OY-x8VuyscjzKZdgBfC511_rzAEGEcSKCqS1GJpYfE2ZAOkNXRSSfNJE8OjDgP6QZeuUwIaLFCGdD1eDw",
-    features: [
-      "Abrasive Grit Sandblasting",
-      "Mill-Scale & Heavy Rust Removal",
-      "Multi-Stage Chemical Wash Bays",
-      "Mechanical Anchor Profile Profiling",
-      "De-greasing & Etch Wash Preparation",
-    ],
-    applications: [
-      "Refurbishing Old Powder Coated Parts",
-      "Raw Steel Mill-Scale Removal",
-      "Heavy Rust & Oxidized Surface Profiling",
-      "Cast Iron & Cast Aluminium Preparation",
-      "Pre-Coating Clean Surface Etching",
-    ],
-    specifications: [
-      { label: "Prep Stage", value: "Integrative Pre-Coating Surface Prep" },
-      { label: "Blast Media", value: "Grit & Garnet Abrasive Media" },
-      { label: "Chemical Wash", value: "Multi-Stage Phosphate & Rinse Line" },
-      { label: "Key Benefit", value: "Maximum Powder Adhesion & Longevity" },
-    ],
-  },
 ];

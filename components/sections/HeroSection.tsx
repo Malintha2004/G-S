@@ -55,7 +55,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Desktop description (full text) */}
             <p className="font-body text-body-lg text-on-surface-variant max-w-2xl mb-space-lg leading-relaxed hidden md:block">
-              Durable finishes. Vibrant colour options. Precision surface preparation. Servicing Melbourne’s northern industrial corridor with high-voltage electrostatic application, abrasive sandblasting, chemical pretreatment, and batch oven curing up to 8 metres.
+              Durable finishes. Vibrant colour options. Precision surface preparation. Servicing Melbourne’s northern industrial corridor with high-voltage electrostatic application, chemical pretreatment, and batch oven curing up to 8 metres.
             </p>
 
             {/* Primary CTAs */}

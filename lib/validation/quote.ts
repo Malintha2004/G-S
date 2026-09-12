@@ -16,11 +16,9 @@ export const quoteFormSchema = z.object({
       "powder-coating",
       "industrial-powder-coating",
       "architectural-coating",
-      "sandblasting-pretreatment",
       "powder",
       "industrial",
       "architectural",
-      "sandblasting",
     ],
     { errorMap: () => ({ message: "Please select a valid service option." }) }
   ),

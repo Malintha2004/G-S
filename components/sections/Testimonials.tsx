@@ -9,7 +9,7 @@ export const Testimonials: React.FC = () => {
       role: "Site Director, Northern Build Group",
     },
     {
-      text: "Having sandblasting, chemical wash pretreatment, and electrostatic powder coating under the same roof on Barry Road is a game changer. No extra transport fees, no finger-pointing between suppliers. They just get it done right.",
+      text: "Having chemical wash pretreatment and electrostatic powder coating under the same roof on Barry Road is a game changer. No extra transport fees, no finger-pointing between suppliers. They just get it done right.",
       name: "Damian Ross",
       role: "Operations Lead, Apex Logistics Transport",
     },

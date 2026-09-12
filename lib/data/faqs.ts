@@ -9,7 +9,7 @@ export const FAQS_DATA: FaqItem[] = [
     id: "faq-1",
     question: "What materials can you powder coat at Campbellfield?",
     answer:
-      "We coat mild steel, structural steel, galvanised iron, aluminium profiles, stainless steel, and cast metals. Each substrate receives dedicated surface preparation—from high-pressure degreasing to abrasive sandblasting and multi-stage chemical pretreatment wash.",
+      "We coat mild steel, structural steel, galvanised iron, aluminium profiles, stainless steel, and cast metals. Each substrate receives dedicated surface preparation—from high-pressure degreasing to multi-stage chemical pretreatment wash.",
   },
   {
     id: "faq-2",
@@ -19,9 +19,9 @@ export const FAQS_DATA: FaqItem[] = [
   },
   {
     id: "faq-3",
-    question: "Is abrasive sandblasting included in the powder coating process?",
+    question: "How is surface preparation handled prior to powder coating?",
     answer:
-      "Yes. Surface preparation is a fundamental step of our powder coating service at 179 Barry Road. We perform abrasive grit sandblasting to remove rust, mill scale, and old coatings, creating a clean mechanical anchor profile for maximum powder paint adhesion.",
+      "Surface preparation is a fundamental step of our powder coating service at 179 Barry Road. We perform multi-stage chemical pretreatment wash and degreasing to remove oil, contaminants, and oxidation, ensuring a pristine surface for maximum powder paint adhesion.",
   },
   {
     id: "faq-4",

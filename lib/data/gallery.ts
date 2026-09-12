@@ -1,6 +1,6 @@
 export interface GalleryProject {
   id: string;
-  category: "commercial" | "industrial" | "architectural" | "sandblasting";
+  category: "commercial" | "industrial" | "architectural";
   categoryName: string;
   title: string;
   subtitle: string;
@@ -33,17 +33,6 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
     spanClass: "lg:col-span-4",
   },
   {
-    id: "proj-3",
-    category: "sandblasting",
-    categoryName: "Sandblasting & Prep",
-    title: "Abrasive Grit Surface Profiling",
-    subtitle: "Mechanical Blast Etching & Chemical Wash Line",
-    description: "Complete mill-scale removal and surface etching for maximum powder adhesion and rust prevention.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7AmRTSv8Yl9pTYh8Wtwvf5rAYwptW6AnQxLBglftjcGEdFCOZkfBLn_wGBJeu-U_-MfoX8zgHZhdkO4bmvqEWT_cFbOsdRXq95brQXGqIo3QyjKt1WKqIdqmBRAQXkZLpEcFcQbGRctPHgzk4cibBR_dFQA8Z3Bh9Qq0DJXi625ZSTt-Oy5HGIUr2ts4mX0iRSCmahcWCaHNukTYdP-Fo3fc1hDNfR9Ws3Rdbkn0FBKiVFbGwgr_JoartGu0jGcyuJA",
-    spanClass: "lg:col-span-6",
-  },
-  {
     id: "proj-4",
     category: "architectural",
     categoryName: "Architectural Custom",
@@ -52,6 +41,6 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
     description: "Precision powder painting for decorative perforated panels with UV-durable architectural thermoset polymer.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuBrNdyrknrOKKigdoU6jAHU672N4O7NrWBnk6wYLoc5wSu40Axklynjgy7Oc3SAVRJ8cCbHIhge1VNoGEB52coINXXo1Ihh0sHzn7oDFXT62RWs1GtGrSxTYidL8YS6kjEFhWFqlS_7oPe0r38rEN-E74vYChzPq1zwcd2G0EyYACOmdgjErPI5_u2akmB_xy4zKnLNAYliDr0Lu00Nbf7gi0-dgpnV4cdkFLcCTQnSmEA3m0WyU9t1AUN479wAgFANZg",
-    spanClass: "lg:col-span-6",
+    spanClass: "lg:col-span-12",
   },
 ];

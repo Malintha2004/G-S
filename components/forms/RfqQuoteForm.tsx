@@ -224,7 +224,6 @@ export const RfqQuoteForm: React.FC = () => {
               <option value="powder-coating">Commercial & Batch Powder Coating</option>
               <option value="industrial-powder-coating">Industrial Powder Coating</option>
               <option value="architectural-coating">Architectural Powder Coating</option>
-              <option value="sandblasting-pretreatment">Sandblasting & Surface Prep</option>
             </select>
           </div>
 
@@ -283,7 +282,7 @@ export const RfqQuoteForm: React.FC = () => {
             rows={4}
             value={formData.projectScope}
             onChange={handleInputChange}
-            placeholder="Detail part lengths, metal substrate, pretreatment needs, sandblasting requirements, or delivery deadline..."
+            placeholder="Detail part lengths, metal substrate, pretreatment needs, or delivery deadline..."
             className={`w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg border focus:outline-none focus:ring-2 focus:ring-primary font-body text-body-md ${
               errors.projectScope ? "border-error" : "border-outline-variant/30"
             }`}

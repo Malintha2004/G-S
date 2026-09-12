@@ -15,7 +15,7 @@ export const ProcessTimeline: React.FC = () => {
       num: 2,
       stage: "Stage 02",
       title: "Surface Preparation",
-      desc: "Alkaline degreasing, rinse baths, mechanical abrasive sandblasting, and application of zinc-phosphate or chromate-free conversion coats.",
+      desc: "Alkaline degreasing, rinse baths, surface etching, and application of zinc-phosphate or chromate-free conversion coats.",
       highlight: false,
     },
     {

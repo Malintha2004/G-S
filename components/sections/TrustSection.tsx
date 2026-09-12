@@ -51,7 +51,7 @@ export const TrustSection: React.FC = () => {
             </h2>
             <p className="font-body text-body-lg text-on-surface-variant mb-space-md leading-relaxed">
               Eliminate double handling, freight delays, and contractor finger-pointing. At{" "}
-              <strong className="text-on-surface">{SITE_CONFIG.name}</strong>, our Campbellfield workshop pairs abrasive sandblasting surface prep with commercial-grade powder coating facilities under a single chain of custody.
+              <strong className="text-on-surface">{SITE_CONFIG.name}</strong>, our Campbellfield workshop operates commercial-grade powder coating facilities under a single chain of custody.
             </p>
             <p className="font-body text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
               Whether you require architectural screens, commercial fencing, equipment enclosures, automotive components, or bulk production runs of posts and brackets, our technicians execute precise chemical pretreatment, automated baking, and strict micron verification.
@@ -91,7 +91,7 @@ export const TrustSection: React.FC = () => {
                   Surface Integrity
                 </h3>
                 <p className="font-body text-body-sm text-on-surface-variant">
-                  Integrated abrasive sandblasting, chemical etching wash, and multi-stage pretreatment.
+                  Chemical etching wash and multi-stage pretreatment.
                 </p>
               </div>
             </div>

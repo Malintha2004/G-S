@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="font-body text-body-sm text-on-surface-variant mb-space-md">
-              Commercial powder coating, abrasive sandblasting, and protective surface finishing servicing Melbourne&apos;s northern industrial corridor.
+              Commercial powder coating and protective surface finishing servicing Melbourne&apos;s northern industrial corridor.
             </p>
             <div className="flex flex-col gap-space-xs font-label text-label-sm text-on-surface-variant">
               <span className="flex items-center gap-space-xs">
@@ -105,7 +105,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link href="/process" className="hover:text-on-surface transition-colors">
-                  Surface Pretreatment & Grit Profiling
+                  Surface Pretreatment & Chemical Cleaning
                 </Link>
               </li>
             </ul>

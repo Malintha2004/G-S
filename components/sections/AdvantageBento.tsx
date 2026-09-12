@@ -31,7 +31,7 @@ export const AdvantageBento: React.FC = () => {
     {
       num: "[ 04 ]",
       title: "Complete In-House Facility",
-      desc: "Multi-stage chemical wash pretreatment, abrasive sandblasting booth, electrostatic spray bay, and 8.0m batch oven all under one roof at 179 Barry Road.",
+      desc: "Multi-stage chemical wash pretreatment, electrostatic spray bay, and 8.0m batch oven all under one roof at 179 Barry Road.",
       icon: Warehouse,
     },
     {

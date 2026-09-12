@@ -9,7 +9,7 @@ import { Wrench } from "lucide-react";
 export const metadata = constructMetadata({
   title: "Powder Coating & Surface Finishing Services | G & S Engineering",
   description:
-    "Explore our specialized powder coating services: Commercial & Batch Powder Coating, Industrial Powder Coating, Architectural Powder Coating, and Sandblasting & Surface Prep at 179 Barry Road, Campbellfield.",
+    "Explore our specialized powder coating services: Commercial & Batch Powder Coating, Industrial Powder Coating, and Architectural Powder Coating at 179 Barry Road, Campbellfield.",
   path: "/services",
 });
 
@@ -27,7 +27,7 @@ export default function ServicesOverviewPage() {
           Commercial Powder Coating Services
         </h1>
         <p className="font-body text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
-          From abrasive sandblasting surface preparation and chemical wash pretreatment to high-voltage electrostatic powder coating and batch oven curing up to 8.0 metres, G & S Engineering delivers end-to-end industrial coating solutions.
+          From chemical wash pretreatment to high-voltage electrostatic powder coating and batch oven curing up to 8.0 metres, G & S Engineering delivers end-to-end industrial coating solutions.
         </p>
       </div>
 
