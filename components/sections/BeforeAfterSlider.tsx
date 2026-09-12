@@ -40,7 +40,7 @@ export const BeforeAfterSlider: React.FC = () => {
             From Untreated Substrate To Professional Finish
           </h2>
           <p className="font-body text-body-md text-on-surface-variant mt-space-sm">
-            Drag the interactive divider to witness the transformation: raw mill-scale steel RHS frame transformed into a flawless, cured satin-black powder finish.
+            Drag the interactive divider to witness the transformation: raw fabricated aluminium checkerplate ute canopies transformed into a durable, cured satin-black powder finish.
           </p>
         </div>
 
@@ -52,38 +52,38 @@ export const BeforeAfterSlider: React.FC = () => {
           onMouseLeave={() => setIsDragging(false)}
           onMouseMove={(e) => isDragging && handleMove(e.clientX)}
           onTouchMove={handleTouchMove}
-          className="relative max-w-4xl mx-auto h-[440px] rounded-xl overflow-hidden select-none shadow-2xl bg-surface-container border border-outline-variant/40 cursor-ew-resize"
+          className="relative max-w-4xl mx-auto h-[440px] sm:h-[500px] rounded-xl overflow-hidden select-none shadow-2xl bg-surface-container border border-outline-variant/40 cursor-ew-resize"
         >
-          {/* After Image (Finished Black) */}
+          {/* After Image (Finished Satin Black Powder Coated) */}
           <div className="absolute inset-0 w-full h-full">
             <Image
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiNN1cuX-fJ904JaNT5DdiQ5WQdo545yZrdCpv4oXn4GMJLG6Pp33pM1XDfeynPfVQXU4XBL8Qbwep2W6wTXKXiuq4_W_yMqo74cnZjgXLwQUlEZg1DHzn0lPRaAAsC41vwYWqZdo1CXXGQ47cpOB6YCd-tjW5NavqwyduT2aOkxSS3PpbKvk7eHsGSGpvnoG_PiN4eTZ1c9Ux2TIoe5tS1EA5JVl2bPhzQufXD6g_EnqZmO0Ch10UUt3Jme7cixozww"
-              alt="After Finish Powder Coated"
+              src="/images/canopy-black-stacked.jpg"
+              alt="After Finish - Satin Black Powder Coated Checkerplate Canopies"
               fill
               sizes="900px"
-              className="object-cover"
+              className="object-cover object-center"
             />
-            <span className="absolute bottom-space-md right-space-md px-space-md py-space-xs bg-surface-container-lowest/90 backdrop-blur rounded font-label text-label-sm text-primary font-bold uppercase tracking-wider">
-              AFTER // Finished & Cured
+            <span className="absolute bottom-space-md right-space-md px-space-md py-space-xs bg-surface-container-lowest/90 backdrop-blur rounded font-label text-label-sm text-primary font-bold uppercase tracking-wider shadow-lg">
+              AFTER // Satin Black Powder Finish
             </span>
           </div>
 
-          {/* Before Image (Raw Steel) - Clipped by width percentage */}
+          {/* Before Image (Raw Fabricated Aluminium) - Clipped by width percentage */}
           <div
             className="absolute inset-0 h-full overflow-hidden"
             style={{ width: `${sliderPosition}%` }}
           >
             <div className="relative w-[896px] h-full">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Ddk56yG0QrCv1LQxdWhOHFsdoxEp3cgFdNfxCcHjLHmD4CKkRA_sAGJ8kRu2PswwNSE04tP1VaW6zrANbPISOMmFc56b9LdCZBRzmCGS2yqZyjUo5-5sWboOF996riReqM8aNuHnfNoQ_1NJC5wYd8VYfLE9bcEqQvnmcaVR3eiPeEgCvnF1dOFFYVKlr9No4MaS4CZP5NplGNLj3S05OD9OUGlAtonzCIcZXYOHQO_NMtHcWfJV29ejKH3OSqGXMA"
-                alt="Before Finish Raw Untreated Substrate"
+                src="/images/canopy-raw-line.jpg"
+                alt="Before Finish - Raw Fabricated Aluminium Substrate"
                 fill
                 sizes="900px"
-                className="object-cover"
+                className="object-cover object-center"
               />
             </div>
-            <span className="absolute bottom-space-md left-space-md px-space-md py-space-xs bg-surface-container-lowest/90 backdrop-blur rounded font-label text-label-sm text-secondary font-bold uppercase tracking-wider whitespace-nowrap">
-              BEFORE // Untreated Steel Substrate
+            <span className="absolute bottom-space-md left-space-md px-space-md py-space-xs bg-surface-container-lowest/90 backdrop-blur rounded font-label text-label-sm text-secondary font-bold uppercase tracking-wider whitespace-nowrap shadow-lg">
+              BEFORE // Raw Aluminium Substrate
             </span>
           </div>
 

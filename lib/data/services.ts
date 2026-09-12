@@ -23,8 +23,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
       "Durable, consistent electrostatic powder coating for commercial metal components, posts, panels, and volume production runs up to 8 metres in length.",
     fullDescription:
       "At G & S Engineering, our Campbellfield workshop operates a specialized commercial powder coating line built for high volume production runs and custom batch orders. Our precision electrostatic powder application delivers uniform wrap-around coverage across complex geometry, cured in our 8.0-metre batch oven for maximum adhesion, film thickness, and impact resistance.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDl883D5_IxFZOsB9lzL23FHvVZxEQimVowffUeoKGcwkhZQmy_Fd6KeOBoTpFmaS1WHXTN3eC4lbOoeXZSRPtIGOv6ubcrNs2_NBCbDcbIw54pDaiGJTLdhPN6Ccz7n0LlyF2DdbvvG-ILk8mwNjPqwQctDBzA6H3sqiyqY89XSrupaLvMek7Qzuf1ZKd_28I_uFY8-WmxhsqOW3nK5d-6A0oZpkd-gIXY8NCGgdXNUal5KNq0rT5BGDojhAetryGA5Q",
+    image: "/images/canopy-black-stacked.jpg",
     features: [
       "Dulux & Interpon Accredited Powders",
       "8.0m Batch Oven Curing Bay",
@@ -56,8 +55,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
       "Heavy-duty powder coating systems with zinc barrier primers for industrial machinery, agricultural equipment, outdoor infrastructure, and extreme environments.",
     fullDescription:
       "Engineered for demanding commercial and industrial applications, our industrial powder coating solutions incorporate epoxy zinc shield primers, multi-stage chemical pretreatment, and heavy-duty thermoset powder topcoats. We protect industrial metal assets against severe weather, corrosion, UV degradation, and chemical exposure.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDCCVpYzLzlHorlGGcJz5P0sqAzMVuDXG9oeMXNzDzrmjLMXvpSTUOtEfU0HLWsgnHfbgHdoyqL8jvgKRsdFagAfBDIwNlodSyCI8QIQ13D6Cwnyr015JCkmceHuMWTCrX8UTov45lIh7Qbw_ztG7a-_5UgskdnLhNBE8hjp53ESF4JAgAf_lnelqZKXUCqvnQQzA8Xx4bvkIYBgnRXWSFBp0_CADj3ma4mxAcNbX_6smIAcU9ROUjGhwZKQcel2b5JMQ",
+    image: "/images/canopy-black-brackets.jpg",
     features: [
       "Zinc Shield Anti-Corrosion Primers",
       "Heavy Duty Thermoset Polymer Powder",
