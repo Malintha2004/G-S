@@ -21,6 +21,13 @@ export function constructMetadata({
     authors: [{ name: SITE_CONFIG.name }],
     creator: SITE_CONFIG.name,
     metadataBase: new URL(SITE_CONFIG.url),
+    icons: {
+      icon: [
+        { url: SITE_CONFIG.logos.main, type: "image/jpeg" },
+      ],
+      shortcut: SITE_CONFIG.logos.main,
+      apple: SITE_CONFIG.logos.main,
+    },
     alternates: {
       canonical: url,
     },
