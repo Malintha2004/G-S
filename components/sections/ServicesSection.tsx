@@ -23,8 +23,8 @@ export const ServicesSection: React.FC = () => {
           </p>
         </div>
 
-        {/* 4 Core Service Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+        {/* 3 Core Service Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
           {SERVICES_DATA.map((service) => (
             <div
               key={service.id}
@@ -35,7 +35,7 @@ export const ServicesSection: React.FC = () => {
                   src={service.image}
                   alt={service.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent" />
