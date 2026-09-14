@@ -23,10 +23,11 @@ export function constructMetadata({
     metadataBase: new URL(SITE_CONFIG.url),
     icons: {
       icon: [
-        { url: SITE_CONFIG.logos.main, type: "image/jpeg" },
+        { url: "/icon.png", type: "image/png" },
+        { url: "/favicon.ico" },
       ],
-      shortcut: SITE_CONFIG.logos.main,
-      apple: SITE_CONFIG.logos.main,
+      shortcut: "/icon.png",
+      apple: "/icon.png",
     },
     alternates: {
       canonical: url,

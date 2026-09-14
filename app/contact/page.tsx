@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata = constructMetadata({
   title: "Contact & Request Quote | G & S Engineering Campbellfield",
   description:
-    "Contact G & S Engineering at 179 Barry Road, Campbellfield VIC 3061. Call 0493 627 019 or 0415 668 527 or submit your powder coating specs for a 24h factory quote.",
+    "Contact G & S Engineering at 179 Barry Road, Campbellfield VIC 3061. Call 0415 668 527 or 0493 627 019 or submit your powder coating specs for a 24h factory quote.",
   path: "/contact",
 });
 

@@ -14,10 +14,10 @@ export const SITE_CONFIG = {
     full: "179 Barry Road, Campbellfield, VIC, Australia",
   },
   phones: {
-    primary: "0493 627 019",
-    primaryRaw: "0493627019",
-    secondary: "0415 668 527",
-    secondaryRaw: "0415668527",
+    primary: "0415 668 527",
+    primaryRaw: "0415668527",
+    secondary: "0493 627 019",
+    secondaryRaw: "0493627019",
   },
   email: "Sales@primeageindustries.com.au",
   operatingHours: {
