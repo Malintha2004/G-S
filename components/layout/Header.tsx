@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { NAV_ITEMS } from "@/lib/config/navigation";
 import { SITE_CONFIG } from "@/lib/config/site";
 import { MobileNav } from "./MobileNav";
-import { Phone, Mail, FileText } from "lucide-react";
+import { Phone, Mail, FileText, Instagram, Facebook } from "lucide-react";
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
@@ -82,6 +82,26 @@ export const Header: React.FC = () => {
                 title={`Email ${SITE_CONFIG.email}`}
               >
                 <Mail className="w-4 h-4 text-primary" />
+              </a>
+              <a
+                href={SITE_CONFIG.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center p-1.5 rounded-full bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-amber-500/20 border border-pink-500/40 text-pink-300 hover:border-pink-400 hover:text-white transition-all shadow-sm ml-1.5 group shrink-0"
+                aria-label="Follow G&S Engineering on Instagram @gs_engineering_aus"
+                title="Follow us on Instagram @gs_engineering_aus"
+              >
+                <Instagram className="w-4 h-4 text-pink-400 group-hover:scale-110 transition-transform shrink-0" />
+              </a>
+              <a
+                href={SITE_CONFIG.socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center p-1.5 rounded-full bg-blue-600/20 border border-blue-500/40 text-blue-300 hover:border-blue-400 hover:text-white transition-all shadow-sm ml-1 group shrink-0"
+                aria-label="Follow G&S Engineering on Facebook"
+                title="Follow us on Facebook"
+              >
+                <Facebook className="w-4 h-4 text-blue-400 group-hover:scale-110 transition-transform shrink-0 fill-current" />
               </a>
             </div>
           </div>

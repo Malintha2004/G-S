@@ -3,7 +3,7 @@ import { constructMetadata } from "@/lib/config/seo";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { RfqQuoteForm } from "@/components/forms/RfqQuoteForm";
 import { SITE_CONFIG } from "@/lib/config/site";
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, Instagram, Facebook } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = constructMetadata({
@@ -114,6 +114,44 @@ export default function ContactPage() {
                     className="font-body text-body-md text-primary font-semibold hover:underline block break-all"
                   >
                     {SITE_CONFIG.email}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-space-sm">
+                <div className="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center shrink-0">
+                  <Instagram className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="font-label text-label-sm text-on-surface-variant uppercase block font-semibold">
+                    Follow Our Powder Coating Works
+                  </span>
+                  <a
+                    href={SITE_CONFIG.socials.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-body text-body-md text-secondary font-bold hover:underline block"
+                  >
+                    {SITE_CONFIG.socials.instagramHandle}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-space-sm">
+                <div className="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+                  <Facebook className="w-5 h-5 fill-current" />
+                </div>
+                <div>
+                  <span className="font-label text-label-sm text-on-surface-variant uppercase block font-semibold">
+                    Facebook Community & News
+                  </span>
+                  <a
+                    href={SITE_CONFIG.socials.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-body text-body-md text-primary font-bold hover:underline block"
+                  >
+                    G & S Engineering Facebook
                   </a>
                 </div>
               </div>

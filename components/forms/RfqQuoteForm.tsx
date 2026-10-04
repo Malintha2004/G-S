@@ -72,21 +72,46 @@ export const RfqQuoteForm: React.FC = () => {
       return;
     }
 
+    if (fileError) {
+      setSubmitError(fileError);
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
+      const payload = new FormData();
+      payload.append("fullName", result.data.fullName);
+      if (result.data.companyName) payload.append("companyName", result.data.companyName);
+      payload.append("phone", result.data.phone);
+      payload.append("email", result.data.email);
+      payload.append("serviceRequired", result.data.serviceRequired);
+      if (result.data.preferredColor) payload.append("preferredColor", result.data.preferredColor);
+      if (result.data.estimatedQuantity) payload.append("estimatedQuantity", result.data.estimatedQuantity);
+      if (result.data.requiredDate) payload.append("requiredDate", result.data.requiredDate);
+      payload.append("projectScope", result.data.projectScope);
+
+      if (selectedFile) {
+        payload.append("file", selectedFile);
+      }
+
       const response = await fetch("/api/quote", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(result.data),
+        body: payload,
       });
 
-      const data = await response.json();
+      let data: any = {};
+      try {
+        data = await response.json();
+      } catch (parseErr) {
+        throw new Error(`Server response error (${response.status})`);
+      }
 
       if (response.ok && data.success) {
-        setSubmitSuccess(data.message);
+        setSubmitSuccess(
+          data.message ||
+            "Your quote request has been sent successfully. We'll get back to you shortly."
+        );
         setFormData({
           fullName: "",
           companyName: "",
@@ -100,11 +125,17 @@ export const RfqQuoteForm: React.FC = () => {
         });
         setSelectedFile(null);
       } else {
-        setSubmitError(data.error || "Failed to log quote submission.");
+        setSubmitError(
+          data.error || `Failed to process quote request (Status ${response.status}).`
+        );
       }
-    } catch (err) {
-      console.error(err);
-      setSubmitError("A network error occurred. Please try again or call us directly.");
+    } catch (err: any) {
+      console.error("RFQ Submission network error:", err);
+      setSubmitError(
+        err?.message && !err.message.includes("Failed to fetch")
+          ? err.message
+          : "Unable to connect to the quote service. Please check your network connection or contact us directly."
+      );
     } finally {
       setIsSubmitting(false);
     }

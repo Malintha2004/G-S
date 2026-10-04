@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NAV_ITEMS, SERVICE_NAV_ITEMS } from "@/lib/config/navigation";
 import { SITE_CONFIG } from "@/lib/config/site";
-import { Menu, X, Phone, Mail, FileText, ChevronRight } from "lucide-react";
+import { Menu, X, Phone, Mail, FileText, ChevronRight, Instagram, Facebook } from "lucide-react";
 
 export const MobileNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -157,6 +157,28 @@ export const MobileNav: React.FC = () => {
               <Mail className="w-4 h-4 text-primary shrink-0" />
               {SITE_CONFIG.email}
             </a>
+            <div className="flex items-center gap-2 pt-1">
+              <a
+                href={SITE_CONFIG.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center flex-1 py-2.5 rounded-lg bg-gradient-to-r from-pink-500/15 via-purple-500/15 to-amber-500/15 border border-pink-500/30 text-pink-300 hover:border-pink-400 transition-all shadow-sm"
+                aria-label="Instagram @gs_engineering_aus"
+                title="Instagram @gs_engineering_aus"
+              >
+                <Instagram className="w-5 h-5 text-pink-400 shrink-0" />
+              </a>
+              <a
+                href={SITE_CONFIG.socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center flex-1 py-2.5 rounded-lg bg-blue-600/15 border border-blue-500/30 text-blue-300 hover:border-blue-400 transition-all shadow-sm"
+                aria-label="Facebook G & S Engineering"
+                title="Facebook G & S Engineering"
+              >
+                <Facebook className="w-5 h-5 text-blue-400 shrink-0 fill-current" />
+              </a>
+            </div>
           </div>
 
           <div className="text-center font-label text-xs text-tertiary">

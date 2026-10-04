@@ -20,6 +20,12 @@ export const SITE_CONFIG = {
     secondaryRaw: "0493627019",
   },
   email: "Sales@primeageindustries.com.au",
+  socials: {
+    instagram: "https://www.instagram.com/gs_engineering_aus/",
+    instagramHandle: "@gs_engineering_aus",
+    facebook: "https://web.facebook.com/share/p/19PGcAmA4X/",
+    facebookName: "G & S Engineering",
+  },
   operatingHours: {
     weekdays: "Monday – Friday: 06:30 AM – 5:00 PM AEST",
     saturday: "Saturday: By Appointment",

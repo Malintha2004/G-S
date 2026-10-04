@@ -12,6 +12,8 @@ import {
   Award,
   Send,
   Wrench,
+  Instagram,
+  Facebook,
 } from "lucide-react";
 
 export const Footer: React.FC = () => {
@@ -82,6 +84,28 @@ export const Footer: React.FC = () => {
                 <Mail className="w-4 h-4 text-primary shrink-0" />
                 {SITE_CONFIG.email}
               </span>
+              <div className="flex items-center gap-2 mt-2">
+                <a
+                  href={SITE_CONFIG.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center p-2 rounded-lg bg-gradient-to-r from-pink-500/15 via-purple-500/15 to-amber-500/15 border border-pink-500/30 text-pink-300 hover:border-pink-400 hover:text-white transition-all shadow-sm group"
+                  aria-label="Instagram @gs_engineering_aus"
+                  title="Instagram @gs_engineering_aus"
+                >
+                  <Instagram className="w-4 h-4 text-pink-400 group-hover:scale-110 transition-transform shrink-0" />
+                </a>
+                <a
+                  href={SITE_CONFIG.socials.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center p-2 rounded-lg bg-blue-600/15 border border-blue-500/30 text-blue-300 hover:border-blue-400 hover:text-white transition-all shadow-sm group"
+                  aria-label="Facebook G & S Engineering"
+                  title="Facebook G & S Engineering"
+                >
+                  <Facebook className="w-4 h-4 text-blue-400 group-hover:scale-110 transition-transform shrink-0 fill-current" />
+                </a>
+              </div>
             </div>
           </div>
 
