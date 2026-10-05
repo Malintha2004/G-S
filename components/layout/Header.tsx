@@ -106,9 +106,33 @@ export const Header: React.FC = () => {
             </div>
           </div>
 
+          {/* Mobile Social Buttons */}
+          <div className="flex md:hidden items-center gap-1.5 shrink-0">
+            <a
+              href={SITE_CONFIG.socials.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center p-1.5 rounded-full bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-amber-500/20 border border-pink-500/40 text-pink-300 hover:border-pink-400 transition-all shadow-sm shrink-0"
+              aria-label="Instagram"
+              title="Instagram @gs_engineering_aus"
+            >
+              <Instagram className="w-3.5 h-3.5 text-pink-400 shrink-0" />
+            </a>
+            <a
+              href={SITE_CONFIG.socials.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center p-1.5 rounded-full bg-blue-600/20 border border-blue-500/40 text-blue-300 hover:border-blue-400 transition-all shadow-sm shrink-0"
+              aria-label="Facebook"
+              title="Facebook"
+            >
+              <Facebook className="w-3.5 h-3.5 text-blue-400 fill-current shrink-0" />
+            </a>
+          </div>
+
           <Link
             href="/contact#quote"
-            className="inline-flex items-center justify-center px-2 sm:px-space-md py-1.5 sm:py-space-sm bg-secondary-container text-on-secondary-container font-label text-[11px] sm:text-label-md font-bold uppercase tracking-normal sm:tracking-wider rounded-lg hover:bg-secondary-bright transition-colors shadow-sm whitespace-nowrap shrink-0"
+            className="hidden md:inline-flex items-center justify-center px-2 sm:px-space-md py-1.5 sm:py-space-sm bg-secondary-container text-on-secondary-container font-label text-[11px] sm:text-label-md font-bold uppercase tracking-normal sm:tracking-wider rounded-lg hover:bg-secondary-bright transition-colors shadow-sm whitespace-nowrap shrink-0"
           >
             <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1 shrink-0" />
             Get a Quote
